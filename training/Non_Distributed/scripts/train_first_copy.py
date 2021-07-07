@@ -1,8 +1,8 @@
 """Author: Rishav Sapahia."""
-# import sys
+import sys
 # sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 
-# sys.path.insert(1, '/home/rxs1576/latest_scripts/Project_QA')
+sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/Application/training/Non_Distributed')
 from import_packages.dataset_partition import split_equal_into_val_test
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
@@ -11,7 +11,7 @@ import torch
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 import torch.nn as nn
 from efficientnet_pytorch import EfficientNet
-
+import wandb
 import numpy as np
 import os
 import random
@@ -30,18 +30,21 @@ random.seed(seed)
 # CuDA Determinism
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
-
-
+# Wandb configuration
+os.environ['WANDB_API_KEY'] = "344338e09b93dd41994593b9dd0fbcbe9407580c"
+os.environ['WANDB_MODE'] = "offline"
+wandb.init(project="Final_QA_FDA",entity='rishav')
+config = wandb.config
 # %%
-batch_size = 8
-temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/rxs1576/latest_scripts/Final_Input_With_normalized_labels.csv', stratify_colname='labels',no_of_classes=3) # noqa
+config.batch_size = 8
+temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/rxs1576/Final_QA_FDA/QA_application/Processed_Input_files/Combined_No_Rep_3cases.csv', stratify_colname='labels',no_of_classes=3) # noqa
 partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
-training_set = Dataset(partition['train_set'], labels, root_dir='/scratch/netra/AEON_data_224', train_transform=False) # noqa
-validation_set = Dataset(partition['val_set'],labels,root_dir='/scratch/netra/AEON_data_224',valid_transform = False) # noqa
-test_set = Dataset(partition['test_set'],labels,root_dir='/scratch/netra/AEON_data_224',test_transform=True) # noqa
-train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=0, batch_size=batch_size) # noqa
-val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=0, batch_size=batch_size) # noqa
-test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =0, batch_size=batch_size) # noqa
+training_set = Dataset(partition['train_set'], labels, root_dir='/scratch/netra/Combined_Dataset_224', train_transform=False) # noqa
+validation_set = Dataset(partition['val_set'],labels,root_dir='/scratch/netra/Combined_Dataset_224',valid_transform = False) # noqa
+test_set = Dataset(partition['test_set'],labels,root_dir='/scratch/netra/Combined_Dataset_224',test_transform=True) # noqa
+train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
+val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
+test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =0, batch_size=config.batch_size) # noqa
 
 # %%
 data_transfer = {'train': train_loader,
@@ -69,8 +72,9 @@ for name, parameter in model_transfer.named_parameters():
 
 
 # %%
+config.lr = 3e-4
 weights = torch.tensor([0.002, 0.0002, 0.0002, 0.0002])
-optimizer = torch.optim.SGD(model_transfer.parameters(), lr=3e-4)
+optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
 criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
 scheduler = ReduceLROnPlateau(
             optimizer,
@@ -141,7 +145,7 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             accuracy,
             ))
         scheduler.step(train_loss)
-        #wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
+        wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
         # TODO: save the model if validation loss has decreased
         if valid_loss <= valid_loss_min:
             print('Validation loss decreased ({:.6f} --> {:.6f}).  Saving model ...'.format( # noqa
@@ -155,4 +159,4 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=50, checkpoint_path='/home/rxs1576/latest_scripts/Project_QA/checkpoint_600.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=50, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_600.pt') # noqa

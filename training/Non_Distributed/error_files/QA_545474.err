@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 6, in <module>
+    from import_packages.dataset_partition import split_equal_into_val_test
+ModuleNotFoundError: No module named 'import_packages'
