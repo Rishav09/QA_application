@@ -1,0 +1,9 @@
+wandb: Dry run mode, not syncing to the cloud.
+wandb: Tracking run with wandb version 0.8.27
+wandb: Run data is saved locally in wandb/dryrun-20210707_214148-s01w91xv
+
+
+wandb: Waiting for W&B process to finish, PID 123810
+wandb: Program ended successfully.
+wandb: You can sync this run to the cloud by running: 
+wandb: wandb sync wandb/dryrun-20210707_214148-s01w91xv

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 39, in <module>
+    config.batch_size = 8
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/wandb/util.py", line 186, in __setattr__
+    'You must call wandb.init() before {}.{}'.format(self._name, key))
+wandb.core.Error: You must call wandb.init() before wandb.config.batch_size

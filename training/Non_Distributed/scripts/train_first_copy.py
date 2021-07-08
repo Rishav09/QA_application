@@ -2,7 +2,7 @@
 import sys
 # sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 
-sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/Application/training/Non_Distributed')
+sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed')
 from import_packages.dataset_partition import split_equal_into_val_test
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
@@ -33,7 +33,7 @@ torch.backends.cudnn.benchmark = False
 # Wandb configuration
 os.environ['WANDB_API_KEY'] = "344338e09b93dd41994593b9dd0fbcbe9407580c"
 os.environ['WANDB_MODE'] = "offline"
-wandb.init(project="Final_QA_FDA",entity='rishav')
+wandb.init(project="Final_QA_FDA")
 config = wandb.config
 # %%
 config.batch_size = 8
@@ -159,4 +159,4 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=50, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_600.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=30, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt') # noqa

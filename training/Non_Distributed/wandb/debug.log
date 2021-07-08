@@ -1,0 +1,12 @@
+2021-07-08 11:15:26,844 DEBUG   MainThread:62981 [wandb_config.py:_load_defaults():115] wandb dir not provided, skipping defaults
+2021-07-08 11:15:26,892 DEBUG   MainThread:62981 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/rxs1576/Final_QA_FDA/QA_application, universal_newlines=False, shell=None, istream=None)
+2021-07-08 11:15:26,908 DEBUG   MainThread:62981 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-08 11:15:27,066 DEBUG   MainThread:62981 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-08 11:15:27,078 DEBUG   MainThread:62981 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-08 11:15:27,165 DEBUG   MainThread:62981 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-08 11:15:27,301 DEBUG   Thread-4  :62981 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-08 11:15:27,405 DEBUG   Thread-4  :62981 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-08 11:15:27,409 DEBUG   Thread-4  :62981 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-08 11:15:27,658 DEBUG   Thread-4  :62981 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/rishav/QA_application/zw4vfnc3/___batch_archive_1.tgz?Expires=1625843727&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=LlYvAZhmAj3YMNyEYnzpIByJsupKJMQKQ1fUOvAIBLoeNGlw3vsl4vXSChf5xNGgDm325JBuL%2Bw3KlNz9nxUVZeWzCCaS0sYwT9x2ya5SzYtkJ4UoldxvfU0LaxHJ%2BhhrLYKtB0s3VOdByVHECH3un5jy52POtITRtTQDB4oyYXKWXu%2B9MerKfkBIKkPBW4V1Ol%2Bprc0pZj8i3cBA8S8vFRY9YBNmyMeBhDJ6LdGU%2FnL7Y9DcBiAd%2FxiHIpsS4Tqqofeo2vu1pxyipAJHwgy5eGh0xrjeTkfQay76oE0so3psmBYawXp6Bmz60x9CGDH4G%2FgNxhYoZnfkPpwoEn8sA%3D%3D HTTP/1.1" 200 0
+2021-07-08 11:15:28,678 DEBUG   Thread-1  :62981 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-08 11:15:28,748 DEBUG   Thread-1  :62981 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/rishav/QA_application/zw4vfnc3/file_stream HTTP/1.1" 200 None

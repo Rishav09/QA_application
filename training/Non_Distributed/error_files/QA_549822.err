@@ -1,0 +1,26 @@
+wandb: Dry run mode, not syncing to the cloud.
+wandb: Tracking run with wandb version 0.8.27
+wandb: Run data is saved locally in wandb/dryrun-20210707_212427-hea1319y
+
+wandb: Ctrl-c pressed.
+wandb: Program failed with code 255. Press ctrl-c to abort syncing.
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 162, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=50, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_600.pt') # noqa
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 120, in train_model
+    output = model(data)
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 151, in forward
+    replicas = self.replicate(self.module, self.device_ids[:len(inputs)])
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 156, in replicate
+    return replicate(module, device_ids, not torch
+.is_grad_enabled())
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/replicate.py", line 121, in replicate
+    if _is_script_module(module):
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/replicate.py", line 6, in _is_script_module
+    import torch.jit
+KeyboardInterrupt
+wandb: Waiting for W&B process to finish, PID 146027
+wandb: You can sync this run to the cloud by running: 
+wandb: wandb sync wandb/dryrun-20210707_212427-hea1319y

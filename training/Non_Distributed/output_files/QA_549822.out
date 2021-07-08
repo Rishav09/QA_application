@@ -1,0 +1,62 @@
+Sender: LSF System <lsfadmin@t028.triton>
+Subject: Job 549822: <QA> in cluster <triton> Exited
+
+Job <QA> was submitted from host <login1> by user <rxs1576> in cluster <triton> at Wed Jul  7 17:24:19 2021
+Job was executed on host(s) <1*t028>, in queue <normal>, as user <rxs1576> in cluster <triton> at Wed Jul  7 17:24:20 2021
+                            <1*t087>
+</home/rxs1576> was used as the home directory.
+</home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed> was used as the working directory.
+Started at Wed Jul  7 17:24:20 2021
+Terminated at Wed Jul  7 17:40:27 2021
+Results reported at Wed Jul  7 17:40:27 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J "QA"
+#BSUB -o "./output_files/QA_%J.out"
+#BSUB -e "./error_files/QA_%J.err"
+#BSUB -n 2
+#BSUB -R "span[ptile=1]"
+#BSUB -gpu "num=2"
+#BSUB -q "normal"
+
+source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh
+conda activate optho
+cd /home/rxs1576/Final_QA_FDA/
+python ./QA_application/training/Non_Distributed/scripts/train_first_copy.py --data_dir=${Home}/temp 
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1729.25 sec.
+    Max Memory :                                 3058 MB
+    Average Memory :                             2990.52 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                42
+    Run time :                                   966 sec.
+    Turnaround time :                            968 sec.
+
+The output (if any) follows:
+
+Loaded pretrained weights for efficientnet-b0
+Epoch: 1 	Training Loss: 1.082151 	Validation Loss: 0.913934 	 Validation Accuracy: 55.235602 	 
+Validation loss decreased (inf --> 0.913934).  Saving model ...
+Epoch: 2 	Training Loss: 0.917340 	Validation Loss: 0.803278 	 Validation Accuracy: 58.246073 	 
+Validation loss decreased (0.913934 --> 0.803278).  Saving model ...
+Epoch: 3 	Training Loss: 0.856123 	Validation Loss: 0.726619 	 Validation Accuracy: 60.732984 	 
+Validation loss decreased (0.803278 --> 0.726619).  Saving model ...
+
+
+PS:
+
+Read file <./error_files/QA_549822.err> for stderr output of this job.
+

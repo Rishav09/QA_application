@@ -1,0 +1,54 @@
+Sender: LSF System <hpc@ccs.miami.edu>
+Subject: Job 549140: <QA> in cluster <triton> Exited
+
+Job <QA> was submitted from host <login1> by user <rxs1576> in cluster <triton> at Wed Jul  7 17:11:41 2021
+Job was executed on host(s) <1*t040>, in queue <normal>, as user <rxs1576> in cluster <triton> at Wed Jul  7 17:11:42 2021
+                            <1*t065>
+</home/rxs1576> was used as the home directory.
+</home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed> was used as the working directory.
+Started at Wed Jul  7 17:11:42 2021
+Terminated at Wed Jul  7 17:12:18 2021
+Results reported at Wed Jul  7 17:12:18 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J "QA"
+#BSUB -o "./output_files/QA_%J.out"
+#BSUB -e "./error_files/QA_%J.err"
+#BSUB -n 2
+#BSUB -R "span[ptile=1]"
+#BSUB -gpu "num=2"
+#BSUB -q "normal"
+
+source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh
+conda activate optho
+cd /home/rxs1576/Final_QA_FDA/
+python ./QA_application/training/Non_Distributed/scripts/train_first_copy.py --data_dir=${Home}/temp 
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.93 sec.
+    Max Memory :                                 153 MB
+    Average Memory :                             100.14 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                6
+    Run time :                                   34 sec.
+    Turnaround time :                            37 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <./error_files/QA_549140.err> for stderr output of this job.
+

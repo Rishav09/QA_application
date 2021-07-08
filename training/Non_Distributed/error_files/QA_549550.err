@@ -1,0 +1,7 @@
+wandb: ERROR Invalid run mode "offline". Please unset WANDB_MODE.
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 36, in <module>
+    wandb.init(project="Final_QA_FDA")
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/wandb/__init__.py", line 1090, in init
+    raise LaunchError("The WANDB_MODE environment variable is invalid.")
+wandb.run_manager.LaunchError: The WANDB_MODE environment variable is invalid.

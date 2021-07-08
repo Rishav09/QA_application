@@ -1,0 +1,25 @@
+2021-07-08 14:10:50.372367: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+wandb: W&B syncing is set to `offline` in this directory.  Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Waiting for W&B process to finish, PID 37677
+wandb: Program ended successfully.
+wandb: Find user logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210708_141044-wl83tqox/logs/debug.log
+wandb: Find internal logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210708_141044-wl83tqox/logs/debug-internal.log
+wandb: Run summary:
+wandb:            Epoch 1
+wandb:             loss 1.08215
+wandb:       valid_loss 0.91393
+wandb:   Valid_Accuracy 55.2356
+wandb:         _runtime 415
+wandb:       _timestamp 1625768262
+wandb:            _step 0
+wandb: Run history:
+wandb:            Epoch ▁
+wandb:             loss ▁
+wandb:       valid_loss ▁
+wandb:   Valid_Accuracy ▁
+wandb:         _runtime ▁
+wandb:       _timestamp ▁
+wandb:            _step ▁
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210708_141044-wl83tqox

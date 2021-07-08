@@ -1,0 +1,58 @@
+Sender: LSF System <lsfadmin@t063.triton>
+Subject: Job 553828: <QA> in cluster <triton> Done
+
+Job <QA> was submitted from host <login1> by user <rxs1576> in cluster <triton> at Thu Jul  8 14:10:26 2021
+Job was executed on host(s) <1*t063>, in queue <normal>, as user <rxs1576> in cluster <triton> at Thu Jul  8 14:10:26 2021
+                            <1*t070>
+</home/rxs1576> was used as the home directory.
+</home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed> was used as the working directory.
+Started at Thu Jul  8 14:10:26 2021
+Terminated at Thu Jul  8 14:17:50 2021
+Results reported at Thu Jul  8 14:17:50 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J "QA"
+#BSUB -o "./output_files/QA_%J.out"
+#BSUB -e "./error_files/QA_%J.err"
+#BSUB -n 2
+#BSUB -R "span[ptile=1]"
+#BSUB -gpu "num=2"
+#BSUB -q "normal"
+
+source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh
+conda activate optho
+cd /home/rxs1576/Final_QA_FDA/
+python ./QA_application/training/Non_Distributed/scripts/train_first_copy.py --data_dir=${Home}/temp 
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   455.76 sec.
+    Max Memory :                                 3214 MB
+    Average Memory :                             2970.22 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                42
+    Run time :                                   442 sec.
+    Turnaround time :                            444 sec.
+
+The output (if any) follows:
+
+Loaded pretrained weights for efficientnet-b0
+Epoch: 1 	Training Loss: 1.082151 	Validation Loss: 0.913934 	 Validation Accuracy: 55.235602 	 
+Validation loss decreased (inf --> 0.913934).  Saving model ...
+
+
+
+PS:
+
+Read file <./error_files/QA_553828.err> for stderr output of this job.
+
