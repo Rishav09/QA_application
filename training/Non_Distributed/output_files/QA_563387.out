@@ -1,0 +1,56 @@
+Sender: LSF System <hpc@ccs.miami.edu>
+Subject: Job 563387: <QA> in cluster <triton> Exited
+
+Job <QA> was submitted from host <login1> by user <rxs1576> in cluster <triton> at Mon Jul 12 23:33:02 2021
+Job was executed on host(s) <1*t083>, in queue <normal>, as user <rxs1576> in cluster <triton> at Mon Jul 12 23:33:03 2021
+                            <1*t057>
+</home/rxs1576> was used as the home directory.
+</home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed> was used as the working directory.
+Started at Mon Jul 12 23:33:03 2021
+Terminated at Mon Jul 12 23:33:40 2021
+Results reported at Mon Jul 12 23:33:40 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J "QA"
+#BSUB -o "./output_files/QA_%J.out"
+#BSUB -e "./error_files/QA_%J.err"
+#BSUB -n 2
+#BSUB -R "span[ptile=1]"
+#BSUB -gpu "num=2"
+#BSUB -q "normal"
+
+source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh
+conda activate optho
+cd /home/rxs1576/Final_QA_FDA/
+python ./QA_application/training/Non_Distributed/scripts/train_first_copy.py --data_dir=${Home}/temp 
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   15.61 sec.
+    Max Memory :                                 3048 MB
+    Average Memory :                             1706.86 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                39
+    Run time :                                   36 sec.
+    Turnaround time :                            38 sec.
+
+The output (if any) follows:
+
+Loaded pretrained weights for efficientnet-b2
+
+
+
+PS:
+
+Read file <./error_files/QA_563387.err> for stderr output of this job.
+
