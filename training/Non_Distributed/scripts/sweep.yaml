@@ -1,0 +1,13 @@
+entity: rishav
+project: Final_QA_FDA
+program: train_first_copy.py
+method: random
+metric:
+  name: Valid_accuracy
+  goal: maximize
+parameters:
+  learning_rate:
+    min: 0.000001
+    max: 0.1
+  optimizer:
+    values: ["adam", "sgd","RMSprop"]
