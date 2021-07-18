@@ -1,40 +1,29 @@
-'''Author: Rishav Sapahia'''
-# %%
-import os
-import torch
-import numpy as np
-import pandas as pd
-import random
-import torch.nn as nn
-
-
-# %%
+"""Author: Rishav Sapahia."""
 import sys
-sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/From_Bascom/Hold_out/')
-
-
-# %%
+#sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/From_Bascom/Hold_out/') # noqa
+sys.path.insert(1,'/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import inference_val_to_ids
 from import_packages.checkpoint import load_checkpoint
+import os
+import numpy as np
+import pandas as pd
+import random
 import torch
-import torchvision.models as models
-from torch.optim.lr_scheduler import ReduceLROnPlateau
 import torch.nn as nn
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 from efficientnet_pytorch import EfficientNet
 
 
 # %%
-path_dir = '/Users/swastik/ophthalmology/Project_Quality_Assurance/From_Bascom/train_test_val_split/df_test.csv'
+path_dir = '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/data_models/chocolate_feather/df_test.csv' # noqa
 
 
 # %%
-df = pd.read_csv(path_dir).iloc[:,1:]
-df
-
+df = pd.read_csv(path_dir).iloc[:, 1:]
 
 # %%
-source_dir = '/Users/swastik/ophthalmology/Project_Quality_Assurance/Mod_AEON_data'
+source_dir = '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Data_Staging/Combined_Dataset_224' # noqa
 
 
 # %%
@@ -97,9 +86,9 @@ def accuracy(model, loader, criterion, use_cuda=False):
     test_total = 0.0
     model.eval()
     for batch_idx, (data, target) in enumerate(loader):
-        print(batch_idx)
-        print("data shape:", data.shape)
-        print("target shape:", target.shape)
+        # print(batch_idx)
+        # print("data shape:", data.shape)
+        # print("target shape:", target.shape)
         # move to GPU
         if use_cuda:
             data, target = data.cuda(), target.cuda()

@@ -1,0 +1,3 @@
+Excellent
+Good_Adequate
+Insufficient_for_Any_All

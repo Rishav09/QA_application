@@ -2,7 +2,7 @@
 import sys
 # sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 
-sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed')
+sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed') # noqa
 from import_packages.dataset_partition import split_equal_into_val_test
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
@@ -75,7 +75,7 @@ for name, parameter in model_transfer.named_parameters():
 config.lr = 3e-4
 weights = torch.tensor([0.6928, 0.0940, 0.2132])
 optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
-criterion_transfer = nn.CrossEntropyLoss(weight=weights,reduction='mean')
+criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
 scheduler = ReduceLROnPlateau(
             optimizer,
             patience=4,
