@@ -159,4 +159,4 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=60, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=30, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt') # noqa

@@ -11,6 +11,7 @@ import torch
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 import torch.nn as nn
 from efficientnet_pytorch import EfficientNet
+from import_packages.checkpoint import load_checkpoint
 import wandb
 import numpy as np
 import os
@@ -53,11 +54,11 @@ data_transfer = {'train': train_loader,
                  }
 
 # model_transfer = EfficientNet.from_pretrained('efficientnet-b7')
-model_transfer = EfficientNet.from_pretrained('efficientnet-b3',weights_path='/home/rxs1576/latest_scripts/Project_QA/EfficientNetPytorch/efficientnet-b3-5fb5a3c3.pth') # noqa
-n_inputs = model_transfer._fc.in_features
-model_transfer._fc = nn.Linear(n_inputs, 3)
+model_transfer1 = EfficientNet.from_pretrained('efficientnet-b2',weights_path='/home/rxs1576/latest_scripts/Project_QA/EfficientNetPytorch/efficientnet-b2-8bb594d6.pth') # noqa
+n_inputs = model_transfer1._fc.in_features
+model_transfer1._fc = nn.Linear(n_inputs, 3)
 
-
+model_transfer = load_checkpoint(checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt',model = model_transfer1) 
 # %%
 # %%
 for name, parameter in model_transfer.named_parameters():
@@ -159,4 +160,4 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=60, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=30, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224_finetuning.pt') # noqa

@@ -9,4 +9,4 @@
 source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh
 conda activate optho
 cd /home/rxs1576/Final_QA_FDA/
-python ./QA_application/training/Non_Distributed/scripts/train_first_copy.py --data_dir=${Home}/temp 
+python ./QA_application/training/Non_Distributed/scripts/train_remodel.py --data_dir=${Home}/temp 
