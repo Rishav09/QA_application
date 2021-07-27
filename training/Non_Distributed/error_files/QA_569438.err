@@ -1,0 +1,43 @@
+2021-07-23 17:46:31.191715: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+wandb: W&B syncing is set to `offline` in this directory.  Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 162, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=30, checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt') # noqa
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 120, in train_model
+    output = model(data)
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 152, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 162, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 77, in parallel_apply
+    thread.join()
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/threading.py", line 1044, in join
+    self._wait_for_tstate_lock()
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/threading.py", line 1060, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+wandb: Waiting for W&B process to finish, PID 80363
+wandb: Program failed with code 255. 
+wandb: Find user logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210723_174629-82l6ff8j/logs/debug.log
+wandb: Find internal logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210723_174629-82l6ff8j/logs/debug-internal.log
+wandb: Run summary:
+wandb:            Epoch 2
+wandb:             loss 1.92945
+wandb:       valid_loss 1.12424
+wandb:   Valid_Accuracy 69.24084
+wandb:         _runtime 1058
+wandb:       _timestamp 1627077848
+wandb:            _step 1
+wandb: Run history:
+wandb:            Epoch ▁█
+wandb:             loss █▁
+wandb:       valid_loss █▁
+wandb:   Valid_Accuracy ▁█
+wandb:         _runtime ▁█
+wandb:       _timestamp ▁█
+wandb:            _step ▁█
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210723_174629-82l6ff8j

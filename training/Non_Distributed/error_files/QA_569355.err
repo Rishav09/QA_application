@@ -1,0 +1,18 @@
+2021-07-21 13:36:32.608334: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+wandb: W&B syncing is set to `offline` in this directory.  Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_remodel.py", line 61, in <module>
+    model_transfer = load_checkpoint(checkpoint_path='/home/rxs1576/Saved_Models/checkpoint_224.pt',model = model_transfer1)
+  File "/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed/import_packages/checkpoint.py", line 28, in load_checkpoint
+    model.load_state_dict(checkpoint['state_dict'])
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/nn/modules/module.py", line 845, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EfficientNet:
+	size mismatch for _fc.weight: copying a param with shape torch.Size([2, 1408]) from checkpoint, the shape in current model is torch.Size([1000, 1408]).
+	size mismatch for _fc.bias: copying a param with shape torch.Size([2]) from checkpoint, the shape in current model is torch.Size([1000]).
+wandb: Waiting for W&B process to finish, PID 3246
+wandb: Program failed with code 1. 
+wandb: Find user logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210721_133629-m1ytd1ti/logs/debug.log
+wandb: Find internal logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210721_133629-m1ytd1ti/logs/debug-internal.log
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210721_133629-m1ytd1ti

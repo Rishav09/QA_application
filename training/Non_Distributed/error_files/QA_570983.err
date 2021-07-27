@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_first_copy.py", line 7, in <module>
+    from import_packages.dataset_class import Dataset
+  File "/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed/import_packages/dataset_class.py", line 72
+    image = TF.normalize(image, [0.4204, 0.2837, 0.1869], [0.2759, 0.1900, 0.1350])
+                                                                                  ^
+TabError: inconsistent use of tabs and spaces in indentation

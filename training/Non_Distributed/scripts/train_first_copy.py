@@ -39,9 +39,9 @@ config = wandb.config
 config.batch_size = 8
 temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/rxs1576/Final_QA_FDA/QA_application/Processed_Input_files/Combined_No_Rep_3cases.csv', stratify_colname='labels',no_of_classes=3) # noqa
 partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
-training_set = Dataset(partition['train_set'], labels, root_dir='/scratch/netra/Combined_Dataset_224', train_transform=False) # noqa
-validation_set = Dataset(partition['val_set'],labels,root_dir='/scratch/netra/Combined_Dataset_224',valid_transform = False) # noqa
-test_set = Dataset(partition['test_set'],labels,root_dir='/scratch/netra/Combined_Dataset_224',test_transform=True) # noqa
+training_set = Dataset(partition['train_set'], labels, root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc', train_transform=True) # noqa
+validation_set = Dataset(partition['val_set'],labels,root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc',valid_transform = True) # noqa
+test_set = Dataset(partition['test_set'],labels,root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc',test_transform=True) # noqa
 train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
 val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
 test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =0, batch_size=config.batch_size) # noqa
@@ -53,7 +53,7 @@ data_transfer = {'train': train_loader,
                  }
 
 # model_transfer = EfficientNet.from_pretrained('efficientnet-b7')
-model_transfer = EfficientNet.from_pretrained('efficientnet-b3',weights_path='/home/rxs1576/latest_scripts/Project_QA/EfficientNetPytorch/efficientnet-b3-5fb5a3c3.pth') # noqa
+model_transfer = EfficientNet.from_pretrained('efficientnet-b7',weights_path='/home/rxs1576/latest_scripts/Project_QA/EfficientNetPytorch/efficientnet-b7-dcc49843.pth') # noqa
 n_inputs = model_transfer._fc.in_features
 model_transfer._fc = nn.Linear(n_inputs, 3)
 
@@ -72,7 +72,7 @@ for name, parameter in model_transfer.named_parameters():
 
 
 # %%
-config.lr = 3e-4
+config.lr = 3e-1
 weights = torch.tensor([0.6928, 0.0940, 0.2132])
 optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
 criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
@@ -144,7 +144,7 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             valid_loss,
             accuracy,
             ))
-        scheduler.step(train_loss)
+        scheduler.step(valid_loss)
         wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
         # TODO: save the model if validation loss has decreased
         if valid_loss <= valid_loss_min:
