@@ -9,6 +9,7 @@ from import_packages.train_val_to_ids import train_val_to_ids
 from import_packages.checkpoint import save_checkpoint
 import torch
 from torch.optim.lr_scheduler import ReduceLROnPlateau
+from torch.optim.lr_scheduler import CyclicLR
 import torch.nn as nn
 from efficientnet_pytorch import EfficientNet
 import wandb
@@ -72,17 +73,13 @@ for name, parameter in model_transfer.named_parameters():
 
 
 # %%
-config.lr = 3e-1
-weights = torch.tensor([1.5,3.0])
+config.lr = 3e-8
+weights = torch.tensor([1.5, 3.0])
 optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
+optimizer.zero_grad()
 criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
-scheduler = ReduceLROnPlateau(
-            optimizer,
-            patience=4,
-            factor=0.1,
-            mode='min',
-            verbose=True
-        )
+#scheduler = ReduceLROnPlateau(optimizer,patience=4,factor=0.1,mode='min',verbose=True)
+scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=3e-8,max_lr=3e-2, step_size=8000,mode='triangular') # noqa
 
 
 # %%
@@ -139,13 +136,15 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             correct += np.sum(np.squeeze(pred.eq(target.data.view_as(pred)).cpu().numpy())) # noqa
             total += data.size(0)
         accuracy = 100. * (correct/total)
+        print(CyclicLR.print_lr)
         print('Epoch: {} \tTraining Loss: {:.6f} \tValidation Loss: {:.6f} \t Validation Accuracy: {:.6f} \t '.format( # noqa
             epoch,
             train_loss,
             valid_loss,
             accuracy,
             ))
-        scheduler.step(valid_loss)
+        #scheduler.step(valid_loss)
+        scheduler.step()
         wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
         # TODO: save the model if validation loss has decreased
         if valid_loss <= valid_loss_min:
