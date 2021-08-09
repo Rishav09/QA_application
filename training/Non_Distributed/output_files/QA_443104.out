@@ -1,0 +1,101 @@
+Sender: LSF System <lsfadmin@t051.triton>
+Subject: Job 443104: <QA> in cluster <triton> Done
+
+Job <QA> was submitted from host <login1> by user <rxs1576> in cluster <triton> at Sun Aug  8 16:16:24 2021
+Job was executed on host(s) <1*t051>, in queue <normal>, as user <rxs1576> in cluster <triton> at Sun Aug  8 16:16:25 2021
+                            <1*t071>
+</home/rxs1576> was used as the home directory.
+</home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed> was used as the working directory.
+Started at Sun Aug  8 16:16:25 2021
+Terminated at Sun Aug  8 21:49:00 2021
+Results reported at Sun Aug  8 21:49:00 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J "QA"
+#BSUB -o "./output_files/QA_%J.out"
+#BSUB -e "./error_files/QA_%J.err"
+#BSUB -n 2
+#BSUB -R "span[ptile=1]"
+#BSUB -gpu "num=2"
+#BSUB -q "normal"
+
+source /share/apps/ibm_wml_ce/1.6.2/anaconda3/etc/profile.d/conda.sh
+conda activate optho
+cd /home/rxs1576/Final_QA_FDA/
+python ./QA_application/training/Non_Distributed/scripts/train_binary.py --data_dir=${Home}/temp 
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   23933.00 sec.
+    Max Memory :                                 3212 MB
+    Average Memory :                             3206.11 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                29
+    Run time :                                   19955 sec.
+    Turnaround time :                            19956 sec.
+
+The output (if any) follows:
+
+Loaded pretrained weights for efficientnet-b7
+Epoch: 1 	Training Loss: 1.506083 	Validation Loss: 1.093077 	 Validation Accuracy: 75.000000 	 
+Validation loss decreased (inf --> 1.093077).  Saving model ...
+Epoch: 2 	Training Loss: 1.204427 	Validation Loss: 1.090446 	 Validation Accuracy: 76.439791 	 
+Validation loss decreased (1.093077 --> 1.090446).  Saving model ...
+Epoch: 3 	Training Loss: 1.025948 	Validation Loss: 0.806037 	 Validation Accuracy: 77.879581 	 
+Validation loss decreased (1.090446 --> 0.806037).  Saving model ...
+Epoch: 4 	Training Loss: 0.904639 	Validation Loss: 0.796687 	 Validation Accuracy: 74.345550 	 
+Validation loss decreased (0.806037 --> 0.796687).  Saving model ...
+Epoch: 5 	Training Loss: 0.843051 	Validation Loss: 0.812487 	 Validation Accuracy: 75.000000 	 
+Epoch: 6 	Training Loss: 0.810240 	Validation Loss: 0.729182 	 Validation Accuracy: 76.570681 	 
+Validation loss decreased (0.796687 --> 0.729182).  Saving model ...
+Epoch: 7 	Training Loss: 0.761201 	Validation Loss: 0.867857 	 Validation Accuracy: 77.617801 	 
+Epoch: 8 	Training Loss: 0.754479 	Validation Loss: 0.712106 	 Validation Accuracy: 78.664921 	 
+Validation loss decreased (0.729182 --> 0.712106).  Saving model ...
+Epoch: 9 	Training Loss: 0.722056 	Validation Loss: 0.855276 	 Validation Accuracy: 75.785340 	 
+Epoch: 10 	Training Loss: 0.686208 	Validation Loss: 0.705985 	 Validation Accuracy: 78.141361 	 
+Validation loss decreased (0.712106 --> 0.705985).  Saving model ...
+Epoch: 11 	Training Loss: 0.672507 	Validation Loss: 0.603859 	 Validation Accuracy: 78.403141 	 
+Validation loss decreased (0.705985 --> 0.603859).  Saving model ...
+Epoch: 12 	Training Loss: 0.654607 	Validation Loss: 0.551745 	 Validation Accuracy: 81.544503 	 
+Validation loss decreased (0.603859 --> 0.551745).  Saving model ...
+Epoch: 13 	Training Loss: 0.637498 	Validation Loss: 0.868176 	 Validation Accuracy: 74.738220 	 
+Epoch: 14 	Training Loss: 0.608953 	Validation Loss: 0.703151 	 Validation Accuracy: 77.486911 	 
+Epoch: 15 	Training Loss: 0.600267 	Validation Loss: 0.604321 	 Validation Accuracy: 79.581152 	 
+Epoch: 16 	Training Loss: 0.591446 	Validation Loss: 0.672333 	 Validation Accuracy: 77.486911 	 
+Epoch: 17 	Training Loss: 0.587427 	Validation Loss: 0.550399 	 Validation Accuracy: 78.272251 	 
+Validation loss decreased (0.551745 --> 0.550399).  Saving model ...
+Epoch: 18 	Training Loss: 0.580751 	Validation Loss: 0.585431 	 Validation Accuracy: 78.010471 	 
+Epoch: 19 	Training Loss: 0.551899 	Validation Loss: 0.470889 	 Validation Accuracy: 81.675393 	 
+Validation loss decreased (0.550399 --> 0.470889).  Saving model ...
+Epoch: 20 	Training Loss: 0.547505 	Validation Loss: 0.560750 	 Validation Accuracy: 79.581152 	 
+Epoch: 21 	Training Loss: 0.545184 	Validation Loss: 0.538290 	 Validation Accuracy: 78.664921 	 
+Epoch: 22 	Training Loss: 0.542659 	Validation Loss: 0.531030 	 Validation Accuracy: 79.842932 	 
+Epoch: 23 	Training Loss: 0.535599 	Validation Loss: 0.504973 	 Validation Accuracy: 80.890052 	 
+Epoch: 24 	Training Loss: 0.525709 	Validation Loss: 0.521218 	 Validation Accuracy: 81.282723 	 
+Epoch    23: reducing learning rate of group 0 to 3.0000e-02.
+Epoch: 25 	Training Loss: 0.424304 	Validation Loss: 0.466780 	 Validation Accuracy: 80.366492 	 
+Validation loss decreased (0.470889 --> 0.466780).  Saving model ...
+Epoch: 26 	Training Loss: 0.383759 	Validation Loss: 0.410337 	 Validation Accuracy: 82.329843 	 
+Validation loss decreased (0.466780 --> 0.410337).  Saving model ...
+Epoch: 27 	Training Loss: 0.356072 	Validation Loss: 0.439406 	 Validation Accuracy: 81.282723 	 
+Epoch: 28 	Training Loss: 0.346170 	Validation Loss: 0.441613 	 Validation Accuracy: 80.628272 	 
+Epoch: 29 	Training Loss: 0.330818 	Validation Loss: 0.395891 	 Validation Accuracy: 81.675393 	 
+Validation loss decreased (0.410337 --> 0.395891).  Saving model ...
+Epoch: 30 	Training Loss: 0.323954 	Validation Loss: 0.401039 	 Validation Accuracy: 81.282723 	 
+
+
+
+PS:
+
+Read file <./error_files/QA_443104.err> for stderr output of this job.
+

@@ -73,7 +73,7 @@ for name, parameter in model_transfer.named_parameters():
 
 # %%
 config.lr = 3e-1
-weights = torch.tensor([0.6928, 0.0940, 0.2132])
+weights = torch.tensor([7.0, 1.0, 2.0])
 optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
 criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
 scheduler = ReduceLROnPlateau(

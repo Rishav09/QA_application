@@ -1,0 +1,24 @@
+2021-08-08 16:12:41.959000: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+wandb: W&B syncing is set to `offline` in this directory.  Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Traceback (most recent call last):
+  File "./QA_application/training/Non_Distributed/scripts/train_binary.py", line 163, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=30, checkpoint_path='/home/rxs1576/Saved_Models/binary_checkpoint_224.pt') # noqa
+  File "./QA_application/training/Non_Distributed/scripts/train_binary.py", line 116, in train_model
+    for batch_idx, (data, target) in enumerate(loader['train']):
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 346, in __next__
+    data = self.dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed/import_packages/dataset_class.py", line 78, in __getitem__
+    image = Image.open(os.path.join(self.dir, ID))
+  File "/home/rxs1576/.conda/envs/optho/lib/python3.7/site-packages/PIL/Image.py", line 2766, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/scratch/netra/Combined_Dataset_224_Lanc/20170429220026798.JPG'
+wandb: Waiting for W&B process to finish, PID 93979
+wandb: Program failed with code 1. 
+wandb: Find user logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210808_161238-joeawory/logs/debug.log
+wandb: Find internal logs for this run at: /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210808_161238-joeawory/logs/debug-internal.log
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/rxs1576/Final_QA_FDA/wandb/offline-run-20210808_161238-joeawory
