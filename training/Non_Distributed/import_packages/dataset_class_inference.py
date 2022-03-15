@@ -31,7 +31,6 @@ class Dataset(torch.utils.data.Dataset):
         self.labels = labels
         self.list_IDs = list_IDs
         self.dir = root_dir
-        self.race_folder = glob.glob(os.path.join(root_dir, '*.JPG'))
         self.train_transform = train_transform
         self.valid_transform = valid_transform
         self.test_transform = test_transform
@@ -84,7 +83,7 @@ class Dataset(torch.utils.data.Dataset):
         else:
             image = self.test_transforms(image)
         img = np.array(image)
-        return img, y
+        return img, y, ID
 
 
 if __name__ == 'main':
