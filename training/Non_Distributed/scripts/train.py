@@ -16,7 +16,7 @@ import torch.utils.data.distributed
 import horovod.torch as hvd
 import torch.multiprocessing as mp
 
-sys.path.insert(1, '/home/rxs1576/latest_scripts/Project_QA')
+sys.path.insert(1, '/home/ubuntu/QA_code/')
 
 # %%
 #device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

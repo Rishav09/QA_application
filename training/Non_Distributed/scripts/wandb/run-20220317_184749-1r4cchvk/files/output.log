@@ -1,0 +1,18 @@
+
+Loaded pretrained weights for efficientnet-b7
+Epoch: 1 	Training Loss: 0.689102 	Validation Loss: 0.695079 	 Validation Accuracy: 51.570681 	
+Validation loss decreased (inf --> 0.695079).  Saving model ...
+Traceback (most recent call last):
+  File "train_binary.py", line 162, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_224.pt') # noqa
+  File "train_binary.py", line 158, in train_model
+    save_checkpoint(state, is_best=True, checkpoint_path=None, best_model_path=checkpoint_path) # noqa
+  File "/home/ubuntu/QA_code/QA_application/training/Non_Distributed/import_packages/checkpoint.py", line 22, in save_checkpoint
+    torch.save(state, best_model_path)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/serialization.py", line 376, in save
+    with _open_file_like(f, 'wb') as opened_file:
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/Saved_Models/binary_checkpoint_224.pt'

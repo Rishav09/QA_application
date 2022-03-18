@@ -2,7 +2,7 @@
 import sys
 # sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 
-sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed') # noqa
+sys.path.insert(1, '/home/ubuntu/QA_code/QA_application/training/Non_Distributed') # noqa
 from import_packages.dataset_partition import split_equal_into_val_test
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
@@ -37,7 +37,7 @@ wandb.init(project="Final_QA_FDA")
 config = wandb.config
 # %%
 config.batch_size = 8
-temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/rxs1576/Final_QA_FDA/QA_application/Processed_Input_files/Combined_No_Rep_3cases.csv', stratify_colname='labels',no_of_classes=3) # noqa
+temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/ubuntu/QA_code/QA_application/QA_application/Processed_Input_files/Combined_No_Rep_3cases.csv', stratify_colname='labels',no_of_classes=3) # noqa
 partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
 training_set = Dataset(partition['train_set'], labels, root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc', train_transform=True) # noqa
 validation_set = Dataset(partition['val_set'],labels,root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc',valid_transform = True) # noqa

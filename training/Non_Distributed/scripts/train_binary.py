@@ -2,7 +2,7 @@
 import sys
 # sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 
-sys.path.insert(1, '/home/rxs1576/Final_QA_FDA/QA_application/training/Non_Distributed') # noqa
+sys.path.insert(1, '/home/ubuntu/QA_code/QA_application/training/Non_Distributed') # noqa
 from import_packages.dataset_partition import split_equal_into_val_test
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
@@ -25,7 +25,7 @@ os.environ['PYTHONHASHSEED'] = str(seed)
 torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
-# Python RNG
+
 np.random.seed(seed)
 random.seed(seed)
 # CuDA Determinism
@@ -33,16 +33,16 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 # Wandb configuration
 os.environ['WANDB_API_KEY'] = "344338e09b93dd41994593b9dd0fbcbe9407580c"
-os.environ['WANDB_MODE'] = "offline"
+os.environ['WANDB_MODE'] = "online"
 wandb.init(project="Final_QA_FDA")
 config = wandb.config
 # %%
 config.batch_size = 8
-temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/rxs1576/Final_QA_FDA/QA_application/Processed_Input_files/Combined_No_Rep_2cases.csv', stratify_colname='labels',no_of_classes=2) # noqa
+temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Combined_No_Rep_2cases.csv', stratify_colname='labels',no_of_classes=2) # noqa
 partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
-training_set = Dataset(partition['train_set'], labels, root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc', train_transform=True) # noqa
-validation_set = Dataset(partition['val_set'],labels,root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc',valid_transform = True) # noqa
-test_set = Dataset(partition['test_set'],labels,root_dir='/scratch/netra/Preprocessed_Combined_Dataset_224_Lanc',test_transform=True) # noqa
+training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/Dataset_224', train_transform=True) # noqa
+validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/Dataset_224',valid_transform = True) # noqa
+test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/Dataset_224',test_transform=True) # noqa
 train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
 val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
 test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =0, batch_size=config.batch_size) # noqa
@@ -54,7 +54,7 @@ data_transfer = {'train': train_loader,
                  }
 
 # model_transfer = EfficientNet.from_pretrained('efficientnet-b7')
-model_transfer = EfficientNet.from_pretrained('efficientnet-b7',weights_path='/home/rxs1576/latest_scripts/Project_QA/EfficientNetPytorch/efficientnet-b7-dcc49843.pth') # noqa
+model_transfer = EfficientNet.from_pretrained('efficientnet-b7') # noqa
 n_inputs = model_transfer._fc.in_features
 model_transfer._fc = nn.Linear(n_inputs, 2)
 
@@ -79,7 +79,7 @@ optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
 optimizer.zero_grad()
 criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
 #scheduler = ReduceLROnPlateau(optimizer,patience=4,factor=0.1,mode='min',verbose=True)
-scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=3e-8,max_lr=3e-2, step_size=8000,mode='triangular') # noqa
+#scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=3e-8,max_lr=3e-2, step_size=8000,mode='triangular') # noqa
 
 
 # %%
@@ -95,7 +95,7 @@ model_transfer.to(device)
 
 # %%
 
-def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkpoint_path): # noqa
+def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path): # noqa
     """Return trained model."""
     # initialize tracker for minimum validation loss
     valid_loss_min = np.Inf
@@ -136,7 +136,7 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             correct += np.sum(np.squeeze(pred.eq(target.data.view_as(pred)).cpu().numpy())) # noqa
             total += data.size(0)
         accuracy = 100. * (correct/total)
-        print(CyclicLR.print_lr)
+       #print(CyclicLR.print_lr)
         print('Epoch: {} \tTraining Loss: {:.6f} \tValidation Loss: {:.6f} \t Validation Accuracy: {:.6f} \t '.format( # noqa
             epoch,
             train_loss,
@@ -144,7 +144,7 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             accuracy,
             ))
         #scheduler.step(valid_loss)
-        scheduler.step()
+        #scheduler.step()
         wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
         # TODO: save the model if validation loss has decreased
         if valid_loss <= valid_loss_min:
@@ -153,10 +153,10 @@ def train_model(model, loader, criterion, optimizer, scheduler, n_epochs, checkp
             # Saving the  model
             state = {
                     'optimizer': optimizer.state_dict(),
-                    'state_dict': model.module.state_dict(),
+                    'state_dict': model.state_dict(),
                     }
             save_checkpoint(state, is_best=True, checkpoint_path=None, best_model_path=checkpoint_path) # noqa
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer, scheduler=scheduler, n_epochs=30, checkpoint_path='/home/rxs1576/Saved_Models/binary_checkpoint_224.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_224.pt') # noqa

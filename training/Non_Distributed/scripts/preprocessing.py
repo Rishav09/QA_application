@@ -34,9 +34,9 @@ def resize_image(image_path, output_folder, resize):
     img.save(outpath)
 
 
-path_dir = '/Volumes/My Book/Total_Dataset/OP'
-output_folder = '/Volumes/My Book/Resized_Dataset/'
-images = glob.glob(os.path.join(path_dir, '*.png'))
+path_dir = '/home/ubuntu/Dataset'
+output_folder = '/home/ubuntu/Dataset_224'
+images = glob.glob(os.path.join(path_dir, '*.JPG'))
 
 
 Parallel(n_jobs=28)(

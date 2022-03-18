@@ -1,0 +1,11 @@
+Loaded pretrained weights for efficientnet-b7
+Epoch: 1 	Training Loss: 0.689102 	Validation Loss: 0.695079 	 Validation Accuracy: 51.570681 	
+Validation loss decreased (inf --> 0.695079).  Saving model ...
+Traceback (most recent call last):
+  File "train_binary.py", line 162, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_224.pt') # noqa
+  File "train_binary.py", line 156, in train_model
+    'state_dict': model.module.state_dict(),
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1177, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'EfficientNet' object has no attribute 'module'
