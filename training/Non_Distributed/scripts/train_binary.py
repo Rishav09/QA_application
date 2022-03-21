@@ -34,7 +34,11 @@ torch.backends.cudnn.benchmark = False
 # Wandb configuration
 os.environ['WANDB_API_KEY'] = "344338e09b93dd41994593b9dd0fbcbe9407580c"
 os.environ['WANDB_MODE'] = "online"
+<<<<<<< Updated upstream
 wandb.init(project="Final_QA_FDA")
+=======
+wandb.init(project="binary_qa")
+>>>>>>> Stashed changes
 config = wandb.config
 # %%
 config.batch_size = 8
@@ -143,8 +147,13 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             valid_loss,
             accuracy,
             ))
+<<<<<<< Updated upstream
         #scheduler.step(valid_loss)
         #scheduler.step()
+=======
+        # scheduler.step(valid_loss)
+        scheduler.step()
+>>>>>>> Stashed changes
         wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
         # TODO: save the model if validation loss has decreased
         if valid_loss <= valid_loss_min:
