@@ -1,0 +1,38 @@
+
+Loaded pretrained weights for efficientnet-b7
+Epoch: 1 	Training Loss: 0.689102 	Validation Loss: 0.695079 	 Validation Accuracy: 51.570681 	
+Validation loss decreased (inf --> 0.695079).  Saving model ...
+Epoch: 2 	Training Loss: 0.687951 	Validation Loss: 0.693128 	 Validation Accuracy: 50.785340 	
+Validation loss decreased (0.695079 --> 0.693128).  Saving model ...
+Epoch: 3 	Training Loss: 0.688851 	Validation Loss: 0.694559 	 Validation Accuracy: 49.869110 	
+Epoch: 4 	Training Loss: 0.688856 	Validation Loss: 0.696899 	 Validation Accuracy: 50.654450 	
+Epoch: 5 	Training Loss: 0.687581 	Validation Loss: 0.693714 	 Validation Accuracy: 51.047120 	
+Epoch: 6 	Training Loss: 0.688581 	Validation Loss: 0.696839 	 Validation Accuracy: 50.130890 	
+Epoch: 7 	Training Loss: 0.688264 	Validation Loss: 0.692108 	 Validation Accuracy: 52.486911 	
+Validation loss decreased (0.693128 --> 0.692108).  Saving model ...
+Epoch: 8 	Training Loss: 0.688166 	Validation Loss: 0.696395 	 Validation Accuracy: 50.523560 	
+Epoch: 9 	Training Loss: 0.689180 	Validation Loss: 0.692871 	 Validation Accuracy: 52.356021 	
+Epoch: 10 	Training Loss: 0.688903 	Validation Loss: 0.694708 	 Validation Accuracy: 50.654450 	
+Epoch: 11 	Training Loss: 0.689524 	Validation Loss: 0.696088 	 Validation Accuracy: 51.439791 	
+Epoch: 12 	Training Loss: 0.689487 	Validation Loss: 0.693414 	 Validation Accuracy: 51.178010 	
+Epoch: 13 	Training Loss: 0.688986 	Validation Loss: 0.691393 	 Validation Accuracy: 51.963351 	
+Validation loss decreased (0.692108 --> 0.691393).  Saving model ...
+Epoch: 14 	Training Loss: 0.686764 	Validation Loss: 0.690008 	 Validation Accuracy: 53.403141 	
+Validation loss decreased (0.691393 --> 0.690008).  Saving model ...
+Epoch: 15 	Training Loss: 0.689214 	Validation Loss: 0.694479 	 Validation Accuracy: 50.785340 	
+Epoch: 16 	Training Loss: 0.689097 	Validation Loss: 0.695145 	 Validation Accuracy: 49.738220 	
+Epoch: 17 	Training Loss: 0.690246 	Validation Loss: 0.689736 	 Validation Accuracy: 51.832461 	
+Validation loss decreased (0.690008 --> 0.689736).  Saving model ...
+Epoch: 18 	Training Loss: 0.687245 	Validation Loss: 0.693338 	 Validation Accuracy: 52.225131 	
+Epoch: 19 	Training Loss: 0.686737 	Validation Loss: 0.694690 	 Validation Accuracy: 49.607330 	
+Epoch: 20 	Training Loss: 0.688820 	Validation Loss: 0.691449 	 Validation Accuracy: 52.617801 	
+Epoch: 21 	Training Loss: 0.688826 	Validation Loss: 0.693096 	 Validation Accuracy: 53.141361 	
+Epoch: 22 	Training Loss: 0.688794 	Validation Loss: 0.693712 	 Validation Accuracy: 50.916230 	
+Epoch: 23 	Training Loss: 0.688538 	Validation Loss: 0.692510 	 Validation Accuracy: 53.141361 	
+Epoch: 24 	Training Loss: 0.688250 	Validation Loss: 0.694343 	 Validation Accuracy: 52.879581 	
+Epoch: 25 	Training Loss: 0.687442 	Validation Loss: 0.694403 	 Validation Accuracy: 51.178010 	
+Epoch: 26 	Training Loss: 0.687615 	Validation Loss: 0.690619 	 Validation Accuracy: 53.534031 	
+Epoch: 27 	Training Loss: 0.688732 	Validation Loss: 0.692465 	 Validation Accuracy: 52.094241 	
+Epoch: 28 	Training Loss: 0.688764 	Validation Loss: 0.693095 	 Validation Accuracy: 50.785340 	
+Epoch: 29 	Training Loss: 0.687248 	Validation Loss: 0.695274 	 Validation Accuracy: 50.523560 	
+Epoch: 30 	Training Loss: 0.687028 	Validation Loss: 0.693477 	 Validation Accuracy: 51.308901 	
