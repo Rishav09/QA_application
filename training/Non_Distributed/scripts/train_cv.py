@@ -7,6 +7,7 @@ from import_packages.dataset_partition import cross_validation_train_test
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import kfold
 import torch
+import wandb
 from import_packages.checkpoint import save_checkpoint
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 import torch.nn as nn

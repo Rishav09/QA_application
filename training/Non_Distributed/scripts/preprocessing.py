@@ -19,7 +19,7 @@ def trim(image_path):
     x0, y0 = coords.min(axis=0)
     x1, y1 = coords.max(axis=0)+1
     cropped = img2[x0:x1, y0:y1]
-    im =  Image.fromarray(cropped)
+    im = Image.fromarray(cropped)
     return im
 
 
