@@ -38,9 +38,9 @@ config = wandb.config
 config.batch_size = 8
 temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/2cases.csv', stratify_colname='labels',no_of_classes=2) # noqa
 partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
-training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/Dataset_224', train_transform=True) # noqa
-validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/Dataset_224',valid_transform = True) # noqa
-test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/Dataset_224',test_transform=True) # noqa
+training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_448', train_transform=True) # noqa
+validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_448',valid_transform = True) # noqa
+test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_448',test_transform=True) # noqa
 train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
 val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=0, batch_size=config.batch_size) # noqa
 test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =0, batch_size=config.batch_size) # noqa
