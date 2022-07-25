@@ -17,14 +17,14 @@ def train_val_to_ids(train, val, test, stratify_columns='labels'): # noqa
         partition dictionary containing train and validation ids and label dictionary containing ids and their labels # noqa
 
     """
-    train_list, val_list, test_list = train['img'].to_list(), val['img'].to_list(), test['img'].to_list() # noqa
+    train_list, val_list, test_list = train['image'].to_list(), val['image'].to_list(), test['image'].to_list() # noqa
     partition = {"train_set": train_list,
                  "val_set": val_list,
                  "test_set": test_list
                  }
-    labels = dict(zip(train.img, train.labels))
-    labels.update(dict(zip(val.img, val.labels)))
-    labels.update(dict(zip(test.img, test.labels)))
+    labels = dict(zip(train.image, train.labels))
+    labels.update(dict(zip(val.image, val.labels)))
+    labels.update(dict(zip(test.image, test.labels)))
     return partition, labels
 
 

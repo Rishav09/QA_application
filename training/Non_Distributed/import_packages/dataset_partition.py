@@ -2,11 +2,7 @@
 from sklearn.model_selection import train_test_split
 from sklearn import model_selection
 import pandas as pd
-
-# %%
-# seed = 1
-# np.random.seed(seed)
-# random.seed(seed)
+import time
 
 
 # https://stackoverflow.com/questions/38250710/how-to-split-data-into-3-sets-train-validation-and-test
@@ -149,12 +145,12 @@ def split_equal_into_val_test(csv_file=None, stratify_colname='y',
         )
 
     # https://stackoverflow.com/questions/39880627/in-pandas-how-to-delete-rows-from-a-data-frame-based-on-another-data-frame
-    df_train = df[~df['img'].isin(dev_test_df['img'])]
-
+    df_train = df[~df['image'].isin(dev_test_df['image'])]
+    timestr = time.strftime("%Y%m%d-%H%M%S")
     assert len(df_input) == len(df_train) + len(df_val) + len(df_test)
-    df_train.to_csv("./df_train.csv")
-    df_test.to_csv("./df_test.csv")
-    df_val.to_csv("./df_val.csv")
+    df_train.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_train_{0}.csv".format(timestr)) # noqa
+    df_test.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_test_{0}.csv".format(timestr))  # noqa
+    df_val.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_val_{0}.csv".format(timestr))    # noqa
     return df_train, df_val, df_test
 
 
