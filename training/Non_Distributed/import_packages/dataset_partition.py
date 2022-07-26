@@ -154,6 +154,70 @@ def split_equal_into_val_test(csv_file=None, stratify_colname='y',
     return df_train, df_val, df_test
 
 
+def split_equal_into_val(csv_file=None, stratify_colname='y',
+                         frac_train=0.6, frac_val=0.15, frac_test=0.25,
+                         no_of_classes=3
+                         ):
+    """
+    Split a Pandas dataframe into two subsets (train, val).
+
+    Following fractional ratios provided by the user, where val and
+    test set have the same number of each classes while train set have
+    the remaining number of left classes
+    Parameters
+    ----------
+    csv_file : Input data csv file to be passed
+    stratify_colname : str
+        The name of the column that will be used for stratification. Usually
+        this column would be for the label.
+    frac_train : float
+    frac_val   : float
+        The ratios with which the dataframe will be split into train, val, and
+        test data. The values should be expressed as float fractions and should
+        sum to 1.0.
+    random_state : int, None, or RandomStateInstance
+        Value to be passed to train_test_split().
+
+    Returns
+    -------
+    df_train, df_val, df_test :
+        Dataframes containing the three splits.
+
+    """
+    df = pd.read_csv(csv_file, engine='python').iloc[:, 1:]
+
+    if frac_train + frac_val + frac_test != 1.0:
+        raise ValueError('fractions %f, %f, %f do not add up to 1.0' %
+                         (frac_train, frac_val, frac_test))
+
+    if stratify_colname not in df.columns:
+        raise ValueError('%s is not a column in the dataframe' %
+                         (stratify_colname))
+
+    df_input = df
+    # Considering that split is 90% train and rest of it is valid and test.
+    sfact = int((0.05*len(df))/no_of_classes)
+
+    # Shuffling the data frame
+    df_input = df_input.sample(frac=1, random_state=42)
+
+    # https://stackoverflow.com/questions/52279834/splitting-training-data-with-equal-number-rows-for-each-classes
+    df_temp_1 = df_input[df_input['labels'] == 0][:sfact]
+    df_temp_2 = df_input[df_input['labels'] == 1][:sfact]
+    df_temp_3 = df_input[df_input['labels'] == 2][:sfact]
+    df_temp_4 = df_input[df_input['labels'] == 3][:sfact]
+
+    df_val = pd.concat([df_temp_1, df_temp_2, df_temp_3, df_temp_4])
+
+    # https://stackoverflow.com/questions/39880627/in-pandas-how-to-delete-rows-from-a-data-frame-based-on-another-data-frame
+    df_train = df[~df['image'].isin(df_val['image'])]
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    assert len(df_input) == len(df_train) + len(df_val)
+    df_train.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_train_{0}.csv".format(timestr)) # noqa
+    df_val.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_val_{0}.csv".format(timestr))    # noqa
+    return df_train, df_val
+
+
 def cross_validation_train_test(csv_file=None, stratify_colname='labels',
                                 frac_train=0.95, frac_test=0.05, n_splits=5,
                                 seed=42):
