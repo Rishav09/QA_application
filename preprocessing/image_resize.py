@@ -17,17 +17,16 @@ def resize_image(image_path,output_folder,resize):
          )
         rgb_img.save(outpath)
 
-path_dir = '/home/ubuntu/EyePacs_Lenke_Dataset'
-output_folder = '/home/ubuntu/EyePacs_Lenke_Dataset_224'
-images = glob.glob(os.path.join(path_dir,'*.JPG'))
 
+path_dir = '/home/ubuntu/EyePacs_Lenke_Dataset_Division/Test'
+output_folder = '/home/ubuntu/EyePacs_Lenke_Dataset_Division_224/test'
+images = glob.glob(os.path.join(path_dir, '*.JPG'))
 
 
 Parallel(n_jobs=120)(
      delayed(resize_image)(
          i,
          output_folder,
-         (448,448)
+         (224, 224)
      )for i in tqdm(images)
-
  )
