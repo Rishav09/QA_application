@@ -50,7 +50,7 @@ class Dataset(torch.utils.data.Dataset):
         # image = TF.adjust_saturation(image, 2)
         # image = TF.adjust_hue(image, 0)
         image = TF.to_tensor(image)
-        image = TF.normalize(image, [0.4076, 0.2810, 0.1891], [0.2688, 0.1886, 0.1362]) # noqa
+        image = TF.normalize(image, [-0.4389, -0.5410, -0.5801], [1.0257, 0.9810, 0.9896]) # noqa
         return image
 
     def valid_transforms(self, image):
@@ -63,13 +63,13 @@ class Dataset(torch.utils.data.Dataset):
         # image = TF.adjust_saturation(image, 2)
         # image = TF.adjust_hue(image, 0)
         image = TF.to_tensor(image)
-        image = TF.normalize(image, [0.4204, 0.2837, 0.1869],[0.2759, 0.1900, 0.1350]) # noqa
+        image = TF.normalize(image, [-0.4389, -0.5410, -0.5801],[1.0257, 0.9810, 0.9896]) # noqa
         return image
 
     def test_transforms(self, image):
         """ To test tranformation """
         image = TF.to_tensor(image)
-        image = TF.normalize(image, [0.4204, 0.2837, 0.1869], [0.2759, 0.1900, 0.1350]) # noqa
+        image = TF.normalize(image, [-0.4389, -0.5410, -0.5801], [1.0257, 0.9810, 0.9896]) # noqa
         return image
 
     def __getitem__(self, index):

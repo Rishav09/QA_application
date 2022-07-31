@@ -196,7 +196,8 @@ def split_equal_into_val(csv_file=None, stratify_colname='y',
 
     df_input = df
     # Considering that split is 90% train and rest of it is valid and test.
-    sfact = int((0.05*len(df))/no_of_classes)
+    # Ugly hack to raise the val size equal to train size
+    sfact = int((0.05262788*len(df))/no_of_classes) + 1
 
     # Shuffling the data frame
     df_input = df_input.sample(frac=1, random_state=42)
@@ -216,6 +217,41 @@ def split_equal_into_val(csv_file=None, stratify_colname='y',
     df_train.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_train_{0}.csv".format(timestr)) # noqa
     df_val.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_val_{0}.csv".format(timestr))    # noqa
     return df_train, df_val
+
+
+def split_equal_into_test(csv_file=None, stratify_colname='y',
+                          ):
+    """
+    Read a Pandas dataframe into test subset.
+
+    Parameters
+    ----------
+    csv_file : Input data csv file to be passed
+    stratify_colname : str
+        The name of the column that will be used for stratification. Usually
+        this column would be for the label.
+    frac_train : float
+    frac_val   : float
+        The ratios with which the dataframe will be split into train, val, and
+        test data. The values should be expressed as float fractions and should
+        sum to 1.0.
+    random_state : int, None, or RandomStateInstance
+        Value to be passed to train_test_split().
+
+    Returns
+    -------
+    df_train, df_val, df_test :
+        Dataframes containing the three splits.
+
+    """
+    df = pd.read_csv(csv_file, engine='python').iloc[:, 1:]
+
+    if stratify_colname not in df.columns:
+        raise ValueError('%s is not a column in the dataframe' %
+                         (stratify_colname))
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    df.to_csv("/home/ubuntu/QA_code/QA_application/Train_Dev_Test_Split/df_test_{0}.csv".format(timestr)) # noqa
+    return df
 
 
 def cross_validation_train_test(csv_file=None, stratify_colname='labels',

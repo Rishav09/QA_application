@@ -1,19 +1,21 @@
 """Author: Rishav Sapahia."""
 import sys
-# sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
-
-sys.path.insert(1, '/home/ubuntu/QA_code/QA_application/training/Non_Distributed') # noqa
-from import_packages.dataset_partition import split_equal_into_val_test
-from import_packages.dataset_class import Dataset
-from import_packages.train_val_to_ids import train_val_to_ids
-from import_packages.checkpoint import save_checkpoint
 import torch
 import torch.nn as nn
-from efficientnet_pytorch import EfficientNet
+import timm
 import wandb
 import numpy as np
 import os
 import random
+from import_packages.dataset_partition import split_equal_into_val, split_equal_into_test # noqa
+from import_packages.dataset_class import Dataset
+from import_packages.train_val_to_ids import train_val_to_ids
+from import_packages.checkpoint import save_checkpoint
+
+# sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
+
+sys.path.insert(1, '/home/ubuntu/QA_code/QA_application/training/Non_Distributed') # noqa
+
 
 # %%
 # Deterministic Behavior
@@ -36,11 +38,12 @@ wandb.init(project="binary_qa")
 config = wandb.config
 # %%
 config.batch_size = 8
-temp_train,temp_valid, temp_test = split_equal_into_val_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/2cases.csv', stratify_colname='labels',no_of_classes=2) # noqa
+temp_train,temp_valid= split_equal_into_val(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_train_val_20220727-181159.csv', stratify_colname='labels',no_of_classes=2) # noqa
+temp_test = split_equal_into_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_test_20220727-181159.csv', stratify_colname='labels') # noqa
 partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
-training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_448', train_transform=True) # noqa
-validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_448',valid_transform = False) # noqa
-test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_448',test_transform=False) # noqa
+training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_128/train', train_transform=True) # noqa
+validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_128/train',valid_transform = True) # noqa
+test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_128/test',test_transform=True) # noqa
 train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=1, batch_size=config.batch_size) # noqa
 val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=1, batch_size=config.batch_size) # noqa
 test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =1, batch_size=config.batch_size) # noqa
@@ -91,7 +94,6 @@ if torch.cuda.device_count() > 1:
 model_transfer.to(device)
 
 
-# %%
 
 def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path): # noqa
     """Return trained model."""
