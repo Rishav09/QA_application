@@ -55,30 +55,28 @@ data_transfer = {'train': train_loader,
                  }
 
 # model_transfer = EfficientNet.from_pretrained('efficientnet-b7')
-model_transfer = EfficientNet.from_pretrained('efficientnet-b7') # noqa
-n_inputs = model_transfer._fc.in_features
-model_transfer._fc = nn.Linear(n_inputs, 2)
+model_transfer = timm.create_model('convnext_tiny_in22k', pretrained=True,num_classes=2) # noqa
+# n_inputs = model_transfer._fc.in_features
+# model_transfer._fc = nn.Linear(n_inputs, 2)
+
+
+# for name, parameter in model_transfer.named_parameters():
+#     parameter.requires_grad = False
+
+
+# # %%
+# update_params_name = ['_fc.weight', '_fc.bias', '_conv_head.weight']
+# for name, parameter in model_transfer.named_parameters():
+#     if name in update_params_name:
+#         parameter.requires_grad = True
 
 
 # %%
-# %%
-for name, parameter in model_transfer.named_parameters():
-    parameter.requires_grad = False
-
-
-# %%
-update_params_name = ['_fc.weight', '_fc.bias', '_conv_head.weight']
-for name, parameter in model_transfer.named_parameters():
-    if name in update_params_name:
-        parameter.requires_grad = True
-
-
-# %%
-config.lr = 3e-8
+config.lr = 3e-4
 weights = torch.tensor([1.5, 3.0])
 optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
 optimizer.zero_grad()
-criterion_transfer = nn.CrossEntropyLoss(weight=weights, reduction='mean')
+criterion_transfer = nn.CrossEntropyLoss()
 #scheduler = ReduceLROnPlateau(optimizer,patience=4,factor=0.1,mode='min',verbose=True) # noqa
 #scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=3e-8,max_lr=3e-2, step_size=8000,mode='triangular') # noqa
 
@@ -156,4 +154,4 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_224.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
