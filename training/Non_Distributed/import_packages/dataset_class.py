@@ -38,7 +38,8 @@ class Dataset(torch.utils.data.Dataset):
 
     def __len__(self):
         """Return a Sample from the dataset given an index."""
-        return len(self.list_IDs)
+        #return len(self.list_IDs)
+        return 2
 
     def train_transforms(self, image):
         """To train transformation."""

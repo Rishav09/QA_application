@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-1066-aws-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-08-07T18:03:30.296440",
+    "startedAt": "2022-08-07T18:03:26.768056",
+    "docker": null,
+    "gpu": "Tesla V100-SXM2-16GB",
+    "gpu_count": 4,
+    "cpu_count": 32,
+    "cuda": "11.0.228",
+    "args": [],
+    "state": "running",
+    "program": "train_binary.py",
+    "codePath": "training/Non_Distributed/scripts/train_binary.py",
+    "git": {
+        "remote": "https://github.com/Rishav09/QA_application.git",
+        "commit": "eddaf4d258a92b9ef71135b2429de213b14da97f"
+    },
+    "email": "rishavsapahia@gmail.com",
+    "root": "/home/ubuntu/QA_code/QA_application",
+    "host": "ip-172-31-10-61",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/pytorch_p38/bin/python"
+}

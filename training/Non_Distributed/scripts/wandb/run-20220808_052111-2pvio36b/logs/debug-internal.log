@@ -1,0 +1,493 @@
+2022-08-08 05:21:12,902 INFO    MainThread:6411 [internal.py:wandb_internal():92] W&B internal server running at pid: 6411, started at: 2022-08-08 05:21:12.902216
+2022-08-08 05:21:12,904 INFO    WriterThread:6411 [datastore.py:open_for_write():77] open: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/run-2pvio36b.wandb
+2022-08-08 05:21:12,906 DEBUG   SenderThread:6411 [sender.py:send():235] send: header
+2022-08-08 05:21:12,906 DEBUG   SenderThread:6411 [sender.py:send():235] send: run
+2022-08-08 05:21:13,012 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: check_version
+2022-08-08 05:21:13,014 INFO    SenderThread:6411 [dir_watcher.py:__init__():169] watching files in: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files
+2022-08-08 05:21:13,014 INFO    SenderThread:6411 [sender.py:_start_run_threads():812] run started: 2pvio36b with start time 1659936071
+2022-08-08 05:21:13,014 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:21:13,014 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:21:13,014 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: check_version
+2022-08-08 05:21:13,047 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: run_start
+2022-08-08 05:21:13,058 DEBUG   HandlerThread:6411 [meta.py:__init__():37] meta init
+2022-08-08 05:21:13,058 DEBUG   HandlerThread:6411 [meta.py:__init__():51] meta init done
+2022-08-08 05:21:13,058 DEBUG   HandlerThread:6411 [meta.py:probe():211] probe
+2022-08-08 05:21:13,065 DEBUG   HandlerThread:6411 [meta.py:_setup_git():201] setup git
+2022-08-08 05:21:13,080 DEBUG   HandlerThread:6411 [meta.py:_setup_git():208] setup git done
+2022-08-08 05:21:13,081 DEBUG   HandlerThread:6411 [meta.py:_save_pip():55] save pip
+2022-08-08 05:21:13,082 DEBUG   HandlerThread:6411 [meta.py:_save_pip():69] save pip done
+2022-08-08 05:21:13,082 DEBUG   HandlerThread:6411 [meta.py:_save_conda():76] save conda
+2022-08-08 05:21:14,016 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:21:14,016 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/requirements.txt
+2022-08-08 05:21:14,016 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/conda-environment.yaml
+2022-08-08 05:21:19,019 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:21:26,752 DEBUG   HandlerThread:6411 [meta.py:_save_conda():86] save conda done
+2022-08-08 05:21:26,752 DEBUG   HandlerThread:6411 [meta.py:probe():249] probe done
+2022-08-08 05:21:26,756 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:21:26,756 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:21:26,815 DEBUG   SenderThread:6411 [sender.py:send():235] send: telemetry
+2022-08-08 05:21:26,816 DEBUG   SenderThread:6411 [sender.py:send():235] send: telemetry
+2022-08-08 05:21:26,816 DEBUG   SenderThread:6411 [sender.py:send():235] send: config
+2022-08-08 05:21:26,816 DEBUG   SenderThread:6411 [sender.py:send():235] send: config
+2022-08-08 05:21:26,816 DEBUG   SenderThread:6411 [sender.py:send():235] send: files
+2022-08-08 05:21:26,816 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-08-08 05:21:27,022 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-metadata.json
+2022-08-08 05:21:27,201 INFO    Thread-11 :6411 [upload_job.py:push():137] Uploaded file /tmp/tmpxakl0mjgwandb/3ko6g192-wandb-metadata.json
+2022-08-08 05:21:38,059 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:21:38,059 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:21:42,083 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:21:42,603 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:21:42,605 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:21:42,605 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:21:42,605 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:21:43,029 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:21:44,029 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/config.yaml
+2022-08-08 05:21:45,030 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:21:47,555 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:21:47,557 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:21:47,557 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:21:47,560 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:21:48,031 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:21:49,031 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:21:52,449 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:21:52,451 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:21:52,451 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:21:52,454 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:21:53,033 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:21:53,192 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:21:53,193 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:21:55,034 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:21:57,369 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:21:57,370 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:21:57,371 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:21:57,371 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:21:58,036 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:21:59,036 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:02,322 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:02,324 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:02,324 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:02,327 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:03,038 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:03,039 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:07,320 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:07,321 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:07,322 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:07,325 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:08,040 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:08,331 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:22:08,331 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:22:09,041 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:12,354 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:12,355 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:12,355 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:12,356 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:13,043 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:13,204 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:22:15,044 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:17,491 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:17,492 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:17,493 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:17,493 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:18,045 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:19,046 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:22,534 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:22,535 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:22,536 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:22,539 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:23,047 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:23,458 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:22:23,458 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:22:25,048 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:27,526 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:27,527 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:27,527 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:27,528 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:28,049 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:29,050 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:32,446 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:32,448 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:32,448 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:32,449 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:33,052 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:33,052 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:37,610 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:37,611 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:37,612 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:37,612 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:38,054 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:38,562 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:22:38,562 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:22:40,055 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:42,553 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:42,554 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:42,555 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:42,555 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:43,056 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:44,057 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:44,298 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:22:47,572 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:47,573 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:47,573 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:47,574 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:48,058 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:50,059 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:52,766 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:52,767 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:52,768 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:52,768 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:53,061 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:22:53,703 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:22:53,703 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:22:54,061 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:22:57,775 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:22:57,776 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:22:57,777 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:22:57,777 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:22:58,063 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:00,063 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:02,680 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:02,681 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:02,681 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:02,682 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:03,065 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:04,066 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:07,623 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:07,624 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:07,625 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:07,625 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:08,067 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:08,835 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:23:08,835 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:23:10,068 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:12,778 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:12,779 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:12,780 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:12,780 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:13,070 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:14,070 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:15,367 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:23:17,799 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:17,801 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:17,801 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:17,801 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:18,072 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:20,073 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:22,797 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:22,799 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:22,799 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:22,800 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:23,074 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:23,968 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:23:23,968 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:23:24,075 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:27,872 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:27,873 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:27,874 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:27,874 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:28,077 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:30,077 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:33,063 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:33,064 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:33,065 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:33,065 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:33,079 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:34,079 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:38,035 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:38,036 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:38,036 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:38,037 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:38,081 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:39,104 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:23:39,104 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:23:40,082 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:42,988 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:42,989 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:42,989 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:42,990 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:43,083 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:44,084 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:46,461 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:23:48,094 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:48,095 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:48,096 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:48,096 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:49,086 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:50,086 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:53,036 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:53,037 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:53,037 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:53,038 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:53,087 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:23:54,088 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:23:54,235 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:23:54,236 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:23:58,082 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:23:58,083 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:23:58,084 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:23:58,084 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:23:58,089 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:01,091 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:03,044 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:03,045 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:03,046 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:03,046 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:03,092 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:05,092 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:08,217 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:08,218 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:08,218 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:08,219 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:09,094 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:09,409 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:24:09,409 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:24:11,095 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:13,182 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:13,184 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:13,184 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:13,185 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:14,097 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:15,097 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:17,547 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:24:18,197 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:18,198 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:18,198 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:18,199 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:19,099 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:19,100 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:23,325 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:23,326 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:23,327 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:23,327 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:24,102 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:24,554 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:24:24,554 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:24:25,102 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:28,307 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:28,308 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:28,309 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:28,309 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:29,104 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:31,105 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:33,252 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:33,253 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:33,254 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:33,254 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:34,106 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:35,106 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:38,210 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:38,212 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:38,212 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:38,213 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:39,109 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:39,109 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:39,705 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:24:39,706 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:24:43,458 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:43,459 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:43,459 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:43,460 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:44,111 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:45,111 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:48,479 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:48,480 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:48,481 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:48,481 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:48,617 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:24:49,113 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:49,113 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:53,442 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:53,443 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:53,444 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:53,444 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:54,115 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:24:54,814 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:24:54,815 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:24:55,116 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:24:58,683 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:24:58,684 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:24:58,684 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:24:58,685 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:24:59,117 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:01,118 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:03,627 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:03,629 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:03,629 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:03,629 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:04,119 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:05,120 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:08,600 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:08,601 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:08,602 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:08,602 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:09,122 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:09,122 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:09,919 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:25:09,920 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:25:13,596 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:13,598 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:13,598 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:13,599 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:14,124 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:16,125 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:18,744 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:18,745 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:18,746 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:18,746 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:19,126 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:19,696 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:25:20,127 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:22,127 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:23,703 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:23,704 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:23,705 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:23,705 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:24,128 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:25,057 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:25:25,057 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:25:26,129 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:28,666 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:28,667 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:28,668 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:28,668 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:29,130 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:30,131 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:33,944 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:33,945 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:33,946 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:33,946 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:34,133 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:36,134 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:38,954 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:38,955 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:38,956 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:38,956 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:39,135 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:40,136 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:40,198 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 05:25:40,198 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 05:25:43,901 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:43,902 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:43,902 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:43,903 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:44,138 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:46,139 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:48,825 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:48,827 DEBUG   SenderThread:6411 [sender.py:send():235] send: history
+2022-08-08 05:25:48,827 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:48,827 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:49,140 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:49,219 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 05:25:49,219 DEBUG   SenderThread:6411 [sender.py:send():235] send: telemetry
+2022-08-08 05:25:50,140 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:50,704 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:25:52,044 DEBUG   SenderThread:6411 [sender.py:send():235] send: exit
+2022-08-08 05:25:52,044 INFO    SenderThread:6411 [sender.py:send_exit():371] handling exit code: 0
+2022-08-08 05:25:52,044 INFO    SenderThread:6411 [sender.py:send_exit():373] handling runtime: 278
+2022-08-08 05:25:52,045 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:52,045 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:52,045 INFO    SenderThread:6411 [sender.py:send_exit():379] send defer
+2022-08-08 05:25:52,045 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:52,046 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,046 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-08 05:25:52,046 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,046 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-08-08 05:25:52,046 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 1
+2022-08-08 05:25:52,047 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,047 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-08 05:25:52,141 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:52,141 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:52,154 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:52,154 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,155 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-08-08 05:25:52,155 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 2
+2022-08-08 05:25:52,155 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:52,156 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,156 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-08 05:25:52,156 DEBUG   SenderThread:6411 [sender.py:send():235] send: stats
+2022-08-08 05:25:52,156 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,157 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-08-08 05:25:52,157 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 3
+2022-08-08 05:25:52,157 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,157 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-08 05:25:52,157 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,157 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-08-08 05:25:52,157 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 4
+2022-08-08 05:25:52,158 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,158 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-08 05:25:52,158 DEBUG   SenderThread:6411 [sender.py:send():235] send: summary
+2022-08-08 05:25:52,158 INFO    SenderThread:6411 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 05:25:52,158 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,159 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-08-08 05:25:52,159 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 5
+2022-08-08 05:25:52,159 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,159 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-08 05:25:52,159 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,159 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-08-08 05:25:52,242 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 6
+2022-08-08 05:25:52,242 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:52,242 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-08 05:25:52,242 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:52,242 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-08-08 05:25:52,242 INFO    SenderThread:6411 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-08-08 05:25:52,256 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,141 INFO    Thread-7  :6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:53,141 INFO    SenderThread:6411 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/config.yaml
+2022-08-08 05:25:53,142 INFO    SenderThread:6411 [dir_watcher.py:finish():313] scan: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files
+2022-08-08 05:25:53,142 INFO    SenderThread:6411 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-metadata.json wandb-metadata.json
+2022-08-08 05:25:53,142 INFO    SenderThread:6411 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/config.yaml config.yaml
+2022-08-08 05:25:53,142 INFO    SenderThread:6411 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json wandb-summary.json
+2022-08-08 05:25:53,146 INFO    SenderThread:6411 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log output.log
+2022-08-08 05:25:53,146 INFO    SenderThread:6411 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/requirements.txt requirements.txt
+2022-08-08 05:25:53,146 INFO    SenderThread:6411 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/conda-environment.yaml conda-environment.yaml
+2022-08-08 05:25:53,147 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 7
+2022-08-08 05:25:53,147 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,155 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:53,155 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-08 05:25:53,159 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:53,159 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-08-08 05:25:53,159 INFO    SenderThread:6411 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-08 05:25:53,256 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,256 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,357 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,357 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,458 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,458 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,492 INFO    Thread-14 :6411 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/output.log
+2022-08-08 05:25:53,495 INFO    Thread-13 :6411 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/wandb-summary.json
+2022-08-08 05:25:53,522 INFO    Thread-15 :6411 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/requirements.txt
+2022-08-08 05:25:53,526 INFO    Thread-12 :6411 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/files/config.yaml
+2022-08-08 05:25:53,559 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,559 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,660 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,660 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,726 INFO    Thread-6  :6411 [sender.py:transition_state():392] send defer: 8
+2022-08-08 05:25:53,726 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:53,726 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-08 05:25:53,727 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:53,727 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-08-08 05:25:53,761 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:53,917 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 9
+2022-08-08 05:25:53,917 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:53,917 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:53,918 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-08 05:25:53,918 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:53,918 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-08-08 05:25:53,918 INFO    SenderThread:6411 [sender.py:transition_state():392] send defer: 10
+2022-08-08 05:25:53,919 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 05:25:53,919 INFO    HandlerThread:6411 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-08 05:25:53,919 DEBUG   SenderThread:6411 [sender.py:send():235] send: final
+2022-08-08 05:25:53,919 DEBUG   SenderThread:6411 [sender.py:send():235] send: footer
+2022-08-08 05:25:53,919 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: defer
+2022-08-08 05:25:53,919 INFO    SenderThread:6411 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-08-08 05:25:54,018 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 05:25:54,018 DEBUG   SenderThread:6411 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 05:25:54,018 INFO    SenderThread:6411 [file_pusher.py:join():150] waiting for file pusher
+2022-08-08 05:25:54,237 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-08 05:25:54,238 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-08 05:25:54,239 DEBUG   HandlerThread:6411 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-08 05:25:54,239 INFO    HandlerThread:6411 [handler.py:finish():778] shutting down handler
+2022-08-08 05:25:54,919 INFO    WriterThread:6411 [datastore.py:close():281] close: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_052111-2pvio36b/run-2pvio36b.wandb
+2022-08-08 05:25:55,136 INFO    SenderThread:6411 [sender.py:finish():1078] shutting down sender
+2022-08-08 05:25:55,136 INFO    SenderThread:6411 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-08 05:25:55,137 INFO    SenderThread:6411 [file_pusher.py:join():150] waiting for file pusher
+2022-08-08 05:25:55,208 INFO    MainThread:6411 [internal.py:handle_exit():82] Internal process exited

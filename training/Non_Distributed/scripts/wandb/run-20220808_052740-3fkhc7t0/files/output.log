@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "train_binary.py", line 158, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=50, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+  File "train_binary.py", line 132, in train_model
+    loss = criterion(output, target)   # changes
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/loss.py", line 1150, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/functional.py", line 2846, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)

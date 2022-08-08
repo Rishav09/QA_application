@@ -1,5 +1,6 @@
 """Author: Rishav Sapahia."""
 import sys
+sys.path.insert(1, '/home/ubuntu/QA_code/QA_application/training/Non_Distributed')
 import torch
 import torch.nn as nn
 import timm
@@ -14,7 +15,7 @@ from import_packages.checkpoint import save_checkpoint
 
 # sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
 
-sys.path.insert(1, '/home/ubuntu/QA_code/QA_application/training/Non_Distributed') # noqa
+ # noqa
 
 
 # %%
@@ -37,21 +38,21 @@ os.environ['WANDB_MODE'] = "online"
 wandb.init(project="binary_qa")
 config = wandb.config
 # %%
-config.batch_size = 8
+config.batch_size = 1
 temp_train,temp_valid= split_equal_into_val(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_train_val_20220727-181159.csv', stratify_colname='labels',no_of_classes=2) # noqa
 temp_test = split_equal_into_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_test_20220727-181159.csv', stratify_colname='labels') # noqa
-partition, labels=train_val_to_ids(temp_train, temp_test, temp_valid, stratify_columns='labels') # noqa
-training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_128/train', train_transform=True) # noqa
-validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_128/train',valid_transform = True) # noqa
-test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_128/test',test_transform=True) # noqa
-train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=1, batch_size=config.batch_size) # noqa
-val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=1, batch_size=config.batch_size) # noqa
-test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =1, batch_size=config.batch_size) # noqa
+partition, labels=train_val_to_ids(temp_train, temp_valid, temp_test, stratify_columns='labels') # noqa
+training_set = Dataset(partition['train_set'], labels, root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_64/train', train_transform=True) # noqa
+validation_set = Dataset(partition['val_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_64/train',valid_transform = True) # noqa
+# test_set = Dataset(partition['test_set'],labels,root_dir='/home/ubuntu/EyePacs_Lenke_Dataset_Division_64/test',test_transform=True) # noqa
+train_loader = torch.utils.data.DataLoader(training_set, shuffle=True, pin_memory=True, num_workers=32, batch_size=config.batch_size) # noqa
+val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory=True, num_workers=32, batch_size=config.batch_size) # noqa
+# test_loader = torch.utils.data.DataLoader(test_set,shuffle=True,pin_memory=True, num_workers =32, batch_size=config.batch_size) # noqa
 
 # %%
 data_transfer = {'train': train_loader,
-                 'valid': val_loader,
-                 'test': test_loader
+                 'valid': train_loader
+                #  'test': test_loader
                  }
 
 # model_transfer = EfficientNet.from_pretrained('efficientnet-b7')
@@ -154,4 +155,4 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=50, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
