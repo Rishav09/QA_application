@@ -38,7 +38,7 @@ os.environ['WANDB_MODE'] = "online"
 wandb.init(project="binary_qa")
 config = wandb.config
 # %%
-config.batch_size = 1
+config.batch_size = 8
 temp_train,temp_valid= split_equal_into_val(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_train_val_20220727-181159.csv', stratify_colname='labels',no_of_classes=2) # noqa
 temp_test = split_equal_into_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_test_20220727-181159.csv', stratify_colname='labels') # noqa
 partition, labels=train_val_to_ids(temp_train, temp_valid, temp_test, stratify_columns='labels') # noqa
@@ -77,7 +77,7 @@ config.lr = 3e-4
 weights = torch.tensor([1.5, 3.0])
 optimizer = torch.optim.SGD(model_transfer.parameters(), lr=config.lr)
 optimizer.zero_grad()
-criterion_transfer = nn.CrossEntropyLoss()
+criterion_transfer = nn.BCEWithLogitsLoss()
 #scheduler = ReduceLROnPlateau(optimizer,patience=4,factor=0.1,mode='min',verbose=True) # noqa
 #scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=3e-8,max_lr=3e-2, step_size=8000,mode='triangular') # noqa
 
@@ -115,7 +115,9 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
                 data, target = data.to('cuda', non_blocking=True), target.to('cuda', non_blocking = True) # noqa
             optimizer.zero_grad()
             output = model(data)
-            loss = criterion(output, target)
+            pred = torch.max(output, dim=1, keepdim=True)[0]
+            target = torch.unsqueeze(target, dim=1)
+            loss = criterion(pred.float(), target.float())
             loss.backward()
             optimizer.step()
             train_loss += ((1 / (batch_idx + 1)) * ((loss.data) - train_loss))
@@ -129,9 +131,9 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
                 data, target = data.cuda(), target.cuda()
             # update the average validation loss
             output = model(data).squeeze()
-            loss = criterion(output, target)   # changes
-            valid_loss += ((1 / (batch_idx + 1)) * ((loss.data) - valid_loss))
             pred = torch.argmax(output, dim=1)
+            loss = criterion(pred.float(), target.float())   # changes
+            valid_loss += ((1 / (batch_idx + 1)) * ((loss.data) - valid_loss))
             correct += np.sum(np.squeeze(pred.eq(target.data.view_as(pred)).cpu().numpy())) # noqa
             total += data.size(0)
         accuracy = 100. * (correct/total)
@@ -155,4 +157,4 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=50, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=5, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa

@@ -1,0 +1,150 @@
+2022-08-08 19:18:26,610 INFO    MainThread:5223 [internal.py:wandb_internal():92] W&B internal server running at pid: 5223, started at: 2022-08-08 19:18:26.610403
+2022-08-08 19:18:26,612 INFO    WriterThread:5223 [datastore.py:open_for_write():77] open: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/run-2dttz0x8.wandb
+2022-08-08 19:18:26,614 DEBUG   SenderThread:5223 [sender.py:send():235] send: header
+2022-08-08 19:18:26,614 DEBUG   SenderThread:5223 [sender.py:send():235] send: run
+2022-08-08 19:18:26,725 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: check_version
+2022-08-08 19:18:26,730 INFO    SenderThread:5223 [dir_watcher.py:__init__():169] watching files in: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files
+2022-08-08 19:18:26,730 INFO    SenderThread:5223 [sender.py:_start_run_threads():812] run started: 2dttz0x8 with start time 1659986305
+2022-08-08 19:18:26,730 DEBUG   SenderThread:5223 [sender.py:send():235] send: summary
+2022-08-08 19:18:26,730 INFO    SenderThread:5223 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 19:18:26,731 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: check_version
+2022-08-08 19:18:26,763 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: run_start
+2022-08-08 19:18:26,775 DEBUG   HandlerThread:5223 [meta.py:__init__():37] meta init
+2022-08-08 19:18:26,775 DEBUG   HandlerThread:5223 [meta.py:__init__():51] meta init done
+2022-08-08 19:18:26,775 DEBUG   HandlerThread:5223 [meta.py:probe():211] probe
+2022-08-08 19:18:26,781 DEBUG   HandlerThread:5223 [meta.py:_setup_git():201] setup git
+2022-08-08 19:18:26,796 DEBUG   HandlerThread:5223 [meta.py:_setup_git():208] setup git done
+2022-08-08 19:18:26,796 DEBUG   HandlerThread:5223 [meta.py:_save_pip():55] save pip
+2022-08-08 19:18:26,797 DEBUG   HandlerThread:5223 [meta.py:_save_pip():69] save pip done
+2022-08-08 19:18:26,797 DEBUG   HandlerThread:5223 [meta.py:_save_conda():76] save conda
+2022-08-08 19:18:27,732 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/requirements.txt
+2022-08-08 19:18:27,733 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/wandb-summary.json
+2022-08-08 19:18:27,733 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/conda-environment.yaml
+2022-08-08 19:18:32,736 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/output.log
+2022-08-08 19:18:41,278 DEBUG   HandlerThread:5223 [meta.py:_save_conda():86] save conda done
+2022-08-08 19:18:41,278 DEBUG   HandlerThread:5223 [meta.py:probe():249] probe done
+2022-08-08 19:18:41,284 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 19:18:41,284 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 19:18:41,362 DEBUG   SenderThread:5223 [sender.py:send():235] send: telemetry
+2022-08-08 19:18:41,362 DEBUG   SenderThread:5223 [sender.py:send():235] send: telemetry
+2022-08-08 19:18:41,362 DEBUG   SenderThread:5223 [sender.py:send():235] send: config
+2022-08-08 19:18:41,362 DEBUG   SenderThread:5223 [sender.py:send():235] send: config
+2022-08-08 19:18:41,362 DEBUG   SenderThread:5223 [sender.py:send():235] send: files
+2022-08-08 19:18:41,362 INFO    SenderThread:5223 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-08-08 19:18:41,731 INFO    Thread-11 :5223 [upload_job.py:push():137] Uploaded file /tmp/tmpz41k0d9cwandb/3ds0h3we-wandb-metadata.json
+2022-08-08 19:18:41,739 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/wandb-metadata.json
+2022-08-08 19:18:50,789 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 19:18:50,789 DEBUG   SenderThread:5223 [sender.py:send():235] send: telemetry
+2022-08-08 19:18:52,743 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/output.log
+2022-08-08 19:18:53,485 DEBUG   SenderThread:5223 [sender.py:send():235] send: exit
+2022-08-08 19:18:53,485 INFO    SenderThread:5223 [sender.py:send_exit():371] handling exit code: 1
+2022-08-08 19:18:53,485 INFO    SenderThread:5223 [sender.py:send_exit():373] handling runtime: 26
+2022-08-08 19:18:53,486 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:53,486 INFO    SenderThread:5223 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 19:18:53,486 INFO    SenderThread:5223 [sender.py:send_exit():379] send defer
+2022-08-08 19:18:53,486 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:53,487 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,487 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-08 19:18:53,487 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,487 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-08-08 19:18:53,487 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 1
+2022-08-08 19:18:53,488 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,488 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-08 19:18:53,618 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:53,618 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,618 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-08-08 19:18:53,618 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 2
+2022-08-08 19:18:53,618 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:53,619 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,619 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-08 19:18:53,619 DEBUG   SenderThread:5223 [sender.py:send():235] send: stats
+2022-08-08 19:18:53,620 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,620 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-08-08 19:18:53,620 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 3
+2022-08-08 19:18:53,620 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,620 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-08 19:18:53,621 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,621 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-08-08 19:18:53,621 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 4
+2022-08-08 19:18:53,621 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,621 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-08 19:18:53,621 DEBUG   SenderThread:5223 [sender.py:send():235] send: summary
+2022-08-08 19:18:53,621 INFO    SenderThread:5223 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 19:18:53,622 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,622 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-08-08 19:18:53,622 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 5
+2022-08-08 19:18:53,622 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,622 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-08 19:18:53,622 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,622 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-08-08 19:18:53,719 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:53,743 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/wandb-summary.json
+2022-08-08 19:18:53,744 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/output.log
+2022-08-08 19:18:53,974 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 6
+2022-08-08 19:18:53,974 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:53,975 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:53,975 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-08 19:18:53,975 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:53,975 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-08-08 19:18:53,975 INFO    SenderThread:5223 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-08-08 19:18:54,075 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:54,744 INFO    Thread-7  :5223 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/config.yaml
+2022-08-08 19:18:54,744 INFO    SenderThread:5223 [dir_watcher.py:finish():313] scan: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files
+2022-08-08 19:18:54,744 INFO    SenderThread:5223 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/wandb-metadata.json wandb-metadata.json
+2022-08-08 19:18:54,744 INFO    SenderThread:5223 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/config.yaml config.yaml
+2022-08-08 19:18:54,744 INFO    SenderThread:5223 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/wandb-summary.json wandb-summary.json
+2022-08-08 19:18:54,748 INFO    SenderThread:5223 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/output.log output.log
+2022-08-08 19:18:54,749 INFO    SenderThread:5223 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/requirements.txt requirements.txt
+2022-08-08 19:18:54,749 INFO    SenderThread:5223 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/conda-environment.yaml conda-environment.yaml
+2022-08-08 19:18:54,753 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 7
+2022-08-08 19:18:54,753 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:54,753 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:54,753 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-08 19:18:54,757 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:54,758 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-08-08 19:18:54,758 INFO    SenderThread:5223 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-08 19:18:54,854 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:54,855 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:54,955 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:54,956 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:55,057 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:55,057 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:55,092 INFO    Thread-15 :5223 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/requirements.txt
+2022-08-08 19:18:55,105 INFO    Thread-13 :5223 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/wandb-summary.json
+2022-08-08 19:18:55,142 INFO    Thread-14 :5223 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/output.log
+2022-08-08 19:18:55,150 INFO    Thread-12 :5223 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/files/config.yaml
+2022-08-08 19:18:55,158 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:55,158 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:55,259 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:55,259 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:55,350 INFO    Thread-6  :5223 [sender.py:transition_state():392] send defer: 8
+2022-08-08 19:18:55,351 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:55,351 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-08 19:18:55,351 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:55,351 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-08-08 19:18:55,360 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:55,418 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 9
+2022-08-08 19:18:55,418 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:55,418 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:55,419 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-08 19:18:55,419 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:55,419 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-08-08 19:18:55,419 INFO    SenderThread:5223 [sender.py:transition_state():392] send defer: 10
+2022-08-08 19:18:55,420 DEBUG   SenderThread:5223 [sender.py:send():235] send: final
+2022-08-08 19:18:55,420 DEBUG   SenderThread:5223 [sender.py:send():235] send: footer
+2022-08-08 19:18:55,420 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 19:18:55,420 INFO    HandlerThread:5223 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-08 19:18:55,420 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: defer
+2022-08-08 19:18:55,420 INFO    SenderThread:5223 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-08-08 19:18:55,519 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 19:18:55,519 DEBUG   SenderThread:5223 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 19:18:55,519 INFO    SenderThread:5223 [file_pusher.py:join():150] waiting for file pusher
+2022-08-08 19:18:55,737 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-08 19:18:55,737 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-08 19:18:55,738 DEBUG   HandlerThread:5223 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-08 19:18:55,738 INFO    HandlerThread:5223 [handler.py:finish():778] shutting down handler
+2022-08-08 19:18:56,420 INFO    WriterThread:5223 [datastore.py:close():281] close: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_191825-2dttz0x8/run-2dttz0x8.wandb
+2022-08-08 19:18:56,636 INFO    SenderThread:5223 [sender.py:finish():1078] shutting down sender
+2022-08-08 19:18:56,636 INFO    SenderThread:5223 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-08 19:18:56,636 INFO    SenderThread:5223 [file_pusher.py:join():150] waiting for file pusher
+2022-08-08 19:18:56,645 INFO    MainThread:5223 [internal.py:handle_exit():82] Internal process exited
