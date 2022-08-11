@@ -1,0 +1,498 @@
+2022-08-10 17:21:03,255 INFO    MainThread:52324 [internal.py:wandb_internal():92] W&B internal server running at pid: 52324, started at: 2022-08-10 17:21:03.255565
+2022-08-10 17:21:03,260 DEBUG   SenderThread:52324 [sender.py:send():235] send: header
+2022-08-10 17:21:03,260 INFO    WriterThread:52324 [datastore.py:open_for_write():77] open: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/run-3ch2sptw.wandb
+2022-08-10 17:21:03,261 DEBUG   SenderThread:52324 [sender.py:send():235] send: run
+2022-08-10 17:21:03,542 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: check_version
+2022-08-10 17:21:03,543 INFO    SenderThread:52324 [dir_watcher.py:__init__():169] watching files in: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files
+2022-08-10 17:21:03,543 INFO    SenderThread:52324 [sender.py:_start_run_threads():812] run started: 3ch2sptw with start time 1660152062
+2022-08-10 17:21:03,544 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:03,544 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:03,544 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: check_version
+2022-08-10 17:21:03,572 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: run_start
+2022-08-10 17:21:03,587 DEBUG   HandlerThread:52324 [meta.py:__init__():37] meta init
+2022-08-10 17:21:03,587 DEBUG   HandlerThread:52324 [meta.py:__init__():51] meta init done
+2022-08-10 17:21:03,587 DEBUG   HandlerThread:52324 [meta.py:probe():211] probe
+2022-08-10 17:21:03,599 DEBUG   HandlerThread:52324 [meta.py:_setup_git():201] setup git
+2022-08-10 17:21:03,613 DEBUG   HandlerThread:52324 [meta.py:_setup_git():208] setup git done
+2022-08-10 17:21:03,613 DEBUG   HandlerThread:52324 [meta.py:_save_pip():55] save pip
+2022-08-10 17:21:03,614 DEBUG   HandlerThread:52324 [meta.py:_save_pip():69] save pip done
+2022-08-10 17:21:03,614 DEBUG   HandlerThread:52324 [meta.py:_save_conda():76] save conda
+2022-08-10 17:21:04,546 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/requirements.txt
+2022-08-10 17:21:04,546 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:04,546 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/conda-environment.yaml
+2022-08-10 17:21:09,545 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:16,763 DEBUG   HandlerThread:52324 [meta.py:_save_conda():86] save conda done
+2022-08-10 17:21:16,763 DEBUG   HandlerThread:52324 [meta.py:probe():249] probe done
+2022-08-10 17:21:16,766 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:21:16,767 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:21:16,849 DEBUG   SenderThread:52324 [sender.py:send():235] send: telemetry
+2022-08-10 17:21:16,850 DEBUG   SenderThread:52324 [sender.py:send():235] send: telemetry
+2022-08-10 17:21:16,850 DEBUG   SenderThread:52324 [sender.py:send():235] send: config
+2022-08-10 17:21:16,850 DEBUG   SenderThread:52324 [sender.py:send():235] send: config
+2022-08-10 17:21:16,850 DEBUG   SenderThread:52324 [sender.py:send():235] send: files
+2022-08-10 17:21:16,850 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-08-10 17:21:17,200 INFO    Thread-11 :52324 [upload_job.py:push():137] Uploaded file /tmp/tmphshgkoa4wandb/tlt1xlgm-wandb-metadata.json
+2022-08-10 17:21:17,547 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-metadata.json
+2022-08-10 17:21:20,255 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:20,256 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:20,256 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:20,259 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:20,549 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:21,549 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:26,342 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:26,343 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:26,343 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:26,346 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:26,550 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:27,551 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:28,597 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:21:28,597 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:21:31,640 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:21:32,529 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:32,530 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:32,531 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:32,531 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:32,552 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:34,553 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/config.yaml
+2022-08-10 17:21:35,553 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:38,873 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:38,874 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:38,875 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:38,877 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:39,555 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:41,555 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:43,710 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:21:43,710 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:21:44,814 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:44,815 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:44,815 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:44,818 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:45,556 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:47,557 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:51,065 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:51,066 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:51,067 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:51,069 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:51,558 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:53,559 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:21:57,331 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:21:57,332 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:21:57,332 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:21:57,335 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:21:57,560 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:21:58,819 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:21:58,819 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:21:59,561 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:01,694 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:22:03,370 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:03,371 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:03,371 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:03,371 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:03,562 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:05,563 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:09,611 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:09,612 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:09,613 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:09,613 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:10,564 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:11,564 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:13,885 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:22:13,886 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:22:15,673 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:15,674 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:15,675 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:15,675 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:16,566 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:17,566 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:21,538 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:21,539 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:21,540 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:21,542 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:21,567 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:23,568 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:27,696 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:27,697 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:27,697 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:27,697 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:28,570 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:28,969 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:22:28,969 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:22:29,570 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:31,746 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:22:33,667 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:33,668 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:33,668 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:33,669 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:34,572 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:35,572 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:39,846 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:39,847 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:39,847 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:39,847 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:40,574 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:41,574 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:44,038 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:22:44,038 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:22:46,252 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:46,253 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:46,253 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:46,255 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:46,576 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:47,576 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:52,406 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:52,407 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:52,407 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:52,408 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:52,578 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:53,578 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:22:58,320 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:22:58,322 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:22:58,322 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:22:58,325 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:22:58,579 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:22:59,125 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:22:59,125 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:22:59,580 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:01,797 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:23:04,599 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:04,600 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:04,600 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:04,600 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:05,582 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:05,582 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:10,897 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:10,898 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:10,898 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:10,901 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:11,583 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:11,584 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:14,213 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:23:14,213 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:23:16,882 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:16,883 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:16,884 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:16,884 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:17,585 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:17,586 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:22,910 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:22,911 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:22,911 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:22,914 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:23,587 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:23,587 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:29,073 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:29,073 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:29,074 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:29,074 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:29,325 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:23:29,325 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:23:29,589 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:29,589 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:31,856 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:23:34,933 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:34,934 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:34,934 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:34,937 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:35,591 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:35,591 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:41,165 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:41,166 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:41,166 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:41,166 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:41,592 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:41,593 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:45,072 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:23:45,072 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:23:46,975 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:46,976 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:46,977 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:46,979 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:47,594 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:48,595 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:53,147 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:53,148 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:53,148 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:53,148 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:53,596 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:23:54,596 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:23:59,054 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:23:59,055 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:23:59,055 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:23:59,057 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:23:59,598 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:00,155 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:24:00,155 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:24:00,598 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:01,908 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:24:05,016 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:05,017 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:05,017 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:05,017 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:05,600 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:06,600 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:10,861 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:10,862 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:10,862 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:10,865 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:11,601 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:12,602 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:15,289 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:24:15,289 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:24:17,085 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:17,085 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:17,086 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:17,086 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:17,603 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:18,604 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:23,336 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:23,337 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:23,337 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:23,340 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:23,605 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:24,605 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:29,112 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:29,113 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:29,113 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:29,113 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:29,607 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:30,366 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:24:30,366 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:24:30,607 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:31,965 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:24:35,280 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:35,281 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:35,281 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:35,284 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:35,609 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:36,609 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:41,218 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:41,219 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:41,219 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:41,220 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:41,610 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:42,611 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:45,453 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:24:45,453 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:24:47,145 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:47,146 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:47,146 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:47,149 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:47,612 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:48,613 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:53,085 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:53,086 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:53,086 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:53,087 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:53,614 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:24:54,614 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:24:59,263 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:24:59,264 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:24:59,264 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:24:59,266 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:24:59,616 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:00,568 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:25:00,569 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:25:00,616 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:02,015 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:25:05,511 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:05,512 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:05,512 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:05,513 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:05,618 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:06,618 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:11,436 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:11,437 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:11,437 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:11,440 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:11,620 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:12,620 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:15,667 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:25:15,667 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:25:17,543 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:17,544 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:17,544 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:17,544 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:17,622 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:18,622 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:23,473 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:23,474 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:23,474 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:23,477 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:23,623 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:24,624 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:29,418 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:29,419 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:29,419 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:29,420 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:29,625 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:30,626 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:30,758 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:25:30,759 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:25:32,066 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:25:35,585 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:35,586 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:35,586 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:35,589 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:35,627 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:36,627 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:41,512 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:41,513 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:41,513 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:41,514 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:41,629 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:42,629 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:45,834 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:25:45,834 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:25:47,411 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:47,412 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:47,413 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:47,415 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:47,631 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:48,631 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:53,703 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:53,704 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:53,705 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:53,705 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:54,633 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:25:54,633 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:25:59,506 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:25:59,507 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:25:59,507 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:25:59,510 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:25:59,635 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:26:00,635 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:26:00,951 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:26:00,951 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:26:02,117 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:26:05,429 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:26:05,430 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:26:05,431 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:26:05,431 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:26:05,636 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:26:06,637 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:26:11,449 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:26:11,450 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:26:11,450 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:26:11,450 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:26:11,638 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:26:12,638 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:26:16,029 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-10 17:26:16,030 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: stop_status
+2022-08-10 17:26:17,642 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:26:17,643 DEBUG   SenderThread:52324 [sender.py:send():235] send: history
+2022-08-10 17:26:17,644 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:26:17,644 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:26:17,645 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-10 17:26:17,645 DEBUG   SenderThread:52324 [sender.py:send():235] send: telemetry
+2022-08-10 17:26:18,640 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:26:18,641 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:26:20,258 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:20,258 DEBUG   SenderThread:52324 [sender.py:send():235] send: exit
+2022-08-10 17:26:20,258 INFO    SenderThread:52324 [sender.py:send_exit():371] handling exit code: 0
+2022-08-10 17:26:20,258 INFO    SenderThread:52324 [sender.py:send_exit():373] handling runtime: 316
+2022-08-10 17:26:20,259 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:26:20,259 INFO    SenderThread:52324 [sender.py:send_exit():379] send defer
+2022-08-10 17:26:20,259 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:20,260 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,260 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-10 17:26:20,260 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,260 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-08-10 17:26:20,260 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 1
+2022-08-10 17:26:20,260 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,260 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-10 17:26:20,349 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,349 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-08-10 17:26:20,349 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 2
+2022-08-10 17:26:20,350 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,350 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-10 17:26:20,350 DEBUG   SenderThread:52324 [sender.py:send():235] send: stats
+2022-08-10 17:26:20,350 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,350 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-08-10 17:26:20,350 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 3
+2022-08-10 17:26:20,351 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,351 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-10 17:26:20,351 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,351 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-08-10 17:26:20,351 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 4
+2022-08-10 17:26:20,351 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,351 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-10 17:26:20,351 DEBUG   SenderThread:52324 [sender.py:send():235] send: summary
+2022-08-10 17:26:20,352 INFO    SenderThread:52324 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-10 17:26:20,352 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,352 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-08-10 17:26:20,352 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 5
+2022-08-10 17:26:20,352 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,352 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-10 17:26:20,352 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,352 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-08-10 17:26:20,361 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:20,508 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 6
+2022-08-10 17:26:20,508 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:20,509 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,509 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-10 17:26:20,509 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,509 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-08-10 17:26:20,509 INFO    SenderThread:52324 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-08-10 17:26:20,609 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:20,641 INFO    Thread-7  :52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:26:20,641 INFO    SenderThread:52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/config.yaml
+2022-08-10 17:26:20,641 INFO    SenderThread:52324 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:26:20,642 INFO    SenderThread:52324 [dir_watcher.py:finish():313] scan: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files
+2022-08-10 17:26:20,642 INFO    SenderThread:52324 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-metadata.json wandb-metadata.json
+2022-08-10 17:26:20,642 INFO    SenderThread:52324 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/config.yaml config.yaml
+2022-08-10 17:26:20,642 INFO    SenderThread:52324 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json wandb-summary.json
+2022-08-10 17:26:20,642 INFO    SenderThread:52324 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log output.log
+2022-08-10 17:26:20,642 INFO    SenderThread:52324 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/requirements.txt requirements.txt
+2022-08-10 17:26:20,650 INFO    SenderThread:52324 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/conda-environment.yaml conda-environment.yaml
+2022-08-10 17:26:20,651 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 7
+2022-08-10 17:26:20,651 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:20,660 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:20,661 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-10 17:26:20,662 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:20,662 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-08-10 17:26:20,662 INFO    SenderThread:52324 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-10 17:26:20,753 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:20,753 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:20,854 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:20,854 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:20,956 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:20,956 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:21,003 INFO    Thread-15 :52324 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/requirements.txt
+2022-08-10 17:26:21,005 INFO    Thread-13 :52324 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/wandb-summary.json
+2022-08-10 17:26:21,011 INFO    Thread-14 :52324 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/output.log
+2022-08-10 17:26:21,038 INFO    Thread-12 :52324 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/files/config.yaml
+2022-08-10 17:26:21,057 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:21,057 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:21,159 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:21,159 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:21,238 INFO    Thread-6  :52324 [sender.py:transition_state():392] send defer: 8
+2022-08-10 17:26:21,239 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:21,239 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-10 17:26:21,239 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:21,239 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-08-10 17:26:21,260 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:21,518 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 9
+2022-08-10 17:26:21,518 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:21,519 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:21,519 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-10 17:26:21,519 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:21,519 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-08-10 17:26:21,519 INFO    SenderThread:52324 [sender.py:transition_state():392] send defer: 10
+2022-08-10 17:26:21,520 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: defer
+2022-08-10 17:26:21,520 INFO    HandlerThread:52324 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-10 17:26:21,520 DEBUG   SenderThread:52324 [sender.py:send():235] send: final
+2022-08-10 17:26:21,520 DEBUG   SenderThread:52324 [sender.py:send():235] send: footer
+2022-08-10 17:26:21,520 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: defer
+2022-08-10 17:26:21,520 INFO    SenderThread:52324 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-08-10 17:26:21,619 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-10 17:26:21,620 DEBUG   SenderThread:52324 [sender.py:send_request():249] send_request: poll_exit
+2022-08-10 17:26:21,620 INFO    SenderThread:52324 [file_pusher.py:join():150] waiting for file pusher
+2022-08-10 17:26:21,864 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-10 17:26:21,866 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-10 17:26:21,866 DEBUG   HandlerThread:52324 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-10 17:26:21,866 INFO    HandlerThread:52324 [handler.py:finish():778] shutting down handler
+2022-08-10 17:26:22,521 INFO    WriterThread:52324 [datastore.py:close():281] close: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220810_172102-3ch2sptw/run-3ch2sptw.wandb
+2022-08-10 17:26:22,763 INFO    SenderThread:52324 [sender.py:finish():1078] shutting down sender
+2022-08-10 17:26:22,763 INFO    SenderThread:52324 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-10 17:26:22,763 INFO    SenderThread:52324 [file_pusher.py:join():150] waiting for file pusher
+2022-08-10 17:26:22,765 INFO    MainThread:52324 [internal.py:handle_exit():82] Internal process exited

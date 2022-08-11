@@ -38,7 +38,7 @@ os.environ['WANDB_MODE'] = "online"
 wandb.init(project="binary_qa")
 config = wandb.config
 # %%
-config.batch_size = 8
+config.batch_size = 1
 temp_train,temp_valid= split_equal_into_val(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_train_val_20220727-181159.csv', stratify_colname='labels',no_of_classes=2) # noqa
 temp_test = split_equal_into_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_test_20220727-181159.csv', stratify_colname='labels') # noqa
 partition, labels=train_val_to_ids(temp_train, temp_valid, temp_test, stratify_columns='labels') # noqa
@@ -51,7 +51,7 @@ val_loader = torch.utils.data.DataLoader(validation_set,shuffle=True, pin_memory
 
 # %%
 data_transfer = {'train': train_loader,
-                 'valid': train_loader
+                 'valid': val_loader
                 #  'test': test_loader
                  }
 
@@ -130,11 +130,14 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             if torch.cuda.is_available():
                 data, target = data.cuda(), target.cuda()
             # update the average validation loss
-            output = model(data).squeeze()
-            pred = torch.argmax(output, dim=1)
+            output = model(data)
+            # Torch.max returns values and indices
+            pred = torch.max(output, dim=1, keepdim=True)[0]
+            preds = torch.max(output, dim=1, keepdim=True)[1]
+            target = torch.unsqueeze(target, dim=1)
             loss = criterion(pred.float(), target.float())   # changes
             valid_loss += ((1 / (batch_idx + 1)) * ((loss.data) - valid_loss))
-            correct += np.sum(np.squeeze(pred.eq(target.data.view_as(pred)).cpu().numpy())) # noqa
+            correct += np.sum(np.squeeze(preds.eq(target.data.view_as(pred)).cpu().numpy())) # noqa
             total += data.size(0)
         accuracy = 100. * (correct/total)
         print('Epoch: {} \tTraining Loss: {:.6f} \tValidation Loss: {:.6f} \t Validation Accuracy: {:.6f} \t '.format( # noqa
@@ -157,4 +160,4 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=5, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=50, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
