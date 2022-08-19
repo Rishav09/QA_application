@@ -1,8 +1,0 @@
-
-Loaded pretrained weights for efficientnet-b7
-Downloading: "https://github.com/lukemelas/EfficientNet-PyTorch/releases/download/1.0/efficientnet-b7-dcc49843.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/efficientnet-b7-dcc49843.pth
-100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 254M/254M [00:02<00:00, 96.8MB/s]
-Traceback (most recent call last):
-  File "train_binary.py", line 82, in <module>
-    scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=3e-8,max_lr=3e-2, step_size=8000,mode='triangular') # noqa
-TypeError: __init__() got an unexpected keyword argument 'step_size'

@@ -1,0 +1,491 @@
+2022-08-08 04:03:51,879 INFO    MainThread:126803 [internal.py:wandb_internal():92] W&B internal server running at pid: 126803, started at: 2022-08-08 04:03:51.879494
+2022-08-08 04:03:51,881 INFO    WriterThread:126803 [datastore.py:open_for_write():77] open: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/run-hrgh845j.wandb
+2022-08-08 04:03:51,883 DEBUG   SenderThread:126803 [sender.py:send():235] send: header
+2022-08-08 04:03:51,883 DEBUG   SenderThread:126803 [sender.py:send():235] send: run
+2022-08-08 04:03:51,986 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: check_version
+2022-08-08 04:03:51,988 INFO    SenderThread:126803 [dir_watcher.py:__init__():169] watching files in: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files
+2022-08-08 04:03:51,988 INFO    SenderThread:126803 [sender.py:_start_run_threads():812] run started: hrgh845j with start time 1659931430
+2022-08-08 04:03:51,988 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:03:51,988 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:03:51,988 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: check_version
+2022-08-08 04:03:52,019 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: run_start
+2022-08-08 04:03:52,030 DEBUG   HandlerThread:126803 [meta.py:__init__():37] meta init
+2022-08-08 04:03:52,030 DEBUG   HandlerThread:126803 [meta.py:__init__():51] meta init done
+2022-08-08 04:03:52,030 DEBUG   HandlerThread:126803 [meta.py:probe():211] probe
+2022-08-08 04:03:52,037 DEBUG   HandlerThread:126803 [meta.py:_setup_git():201] setup git
+2022-08-08 04:03:52,052 DEBUG   HandlerThread:126803 [meta.py:_setup_git():208] setup git done
+2022-08-08 04:03:52,053 DEBUG   HandlerThread:126803 [meta.py:_save_pip():55] save pip
+2022-08-08 04:03:52,054 DEBUG   HandlerThread:126803 [meta.py:_save_pip():69] save pip done
+2022-08-08 04:03:52,054 DEBUG   HandlerThread:126803 [meta.py:_save_conda():76] save conda
+2022-08-08 04:03:52,990 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/requirements.txt
+2022-08-08 04:03:52,990 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/conda-environment.yaml
+2022-08-08 04:03:52,991 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:03:57,994 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:05,797 DEBUG   HandlerThread:126803 [meta.py:_save_conda():86] save conda done
+2022-08-08 04:04:05,797 DEBUG   HandlerThread:126803 [meta.py:probe():249] probe done
+2022-08-08 04:04:05,801 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:04:05,801 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:04:05,860 DEBUG   SenderThread:126803 [sender.py:send():235] send: telemetry
+2022-08-08 04:04:05,860 DEBUG   SenderThread:126803 [sender.py:send():235] send: telemetry
+2022-08-08 04:04:05,861 DEBUG   SenderThread:126803 [sender.py:send():235] send: config
+2022-08-08 04:04:05,861 DEBUG   SenderThread:126803 [sender.py:send():235] send: config
+2022-08-08 04:04:05,861 DEBUG   SenderThread:126803 [sender.py:send():235] send: files
+2022-08-08 04:04:05,861 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-08-08 04:04:05,996 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-metadata.json
+2022-08-08 04:04:06,235 INFO    Thread-11 :126803 [upload_job.py:push():137] Uploaded file /tmp/tmpl_4zf10wwandb/2qd00nuu-wandb-metadata.json
+2022-08-08 04:04:17,030 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:04:17,031 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:04:21,134 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:04:21,737 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:21,738 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:21,739 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:21,739 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:22,003 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:23,003 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/config.yaml
+2022-08-08 04:04:24,004 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:26,621 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:26,622 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:26,623 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:26,626 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:27,005 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:28,006 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:31,640 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:31,642 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:31,642 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:31,645 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:32,007 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:32,146 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:04:32,146 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:04:34,008 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:36,589 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:36,591 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:36,591 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:36,591 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:37,010 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:38,010 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:41,611 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:41,612 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:41,613 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:41,616 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:42,012 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:44,013 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:46,660 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:46,661 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:46,661 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:46,662 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:47,014 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:47,290 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:04:47,290 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:04:48,015 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:51,595 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:51,596 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:51,596 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:51,597 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:52,017 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:52,278 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:04:54,018 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:04:56,751 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:04:56,752 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:04:56,752 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:04:56,753 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:04:57,019 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:04:58,019 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:01,693 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:01,694 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:01,694 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:01,695 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:02,021 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:02,480 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:05:02,481 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:05:04,022 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:06,691 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:06,692 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:06,692 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:06,693 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:07,023 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:08,024 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:11,686 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:11,687 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:11,688 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:11,688 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:12,025 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:12,026 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:16,972 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:16,973 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:16,974 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:16,974 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:17,027 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:17,597 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:05:17,598 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:05:18,028 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:21,955 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:21,956 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:21,956 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:21,957 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:22,030 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:23,341 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:05:24,030 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:26,938 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:26,939 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:26,939 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:26,940 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:27,032 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:28,032 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:32,176 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:32,177 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:32,177 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:32,178 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:32,737 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:05:32,737 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:05:33,034 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:35,035 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:37,183 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:37,184 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:37,185 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:37,185 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:38,036 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:39,037 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:42,212 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:42,214 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:42,214 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:42,215 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:43,039 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:45,040 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:47,322 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:47,323 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:47,324 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:47,324 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:47,899 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:05:47,900 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:05:48,041 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:49,042 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:52,587 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:52,588 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:52,588 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:52,589 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:53,043 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:54,408 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:05:55,044 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:05:57,583 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:05:57,584 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:05:57,585 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:05:57,585 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:05:58,045 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:05:59,046 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:02,589 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:02,590 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:02,591 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:02,591 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:02,962 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:06:02,962 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:06:03,048 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:05,048 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:07,769 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:07,770 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:07,771 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:07,771 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:08,050 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:09,050 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:12,823 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:12,824 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:12,824 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:12,825 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:13,052 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:15,053 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:17,845 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:17,846 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:17,846 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:17,847 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:18,055 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:18,060 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:06:18,061 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:06:19,055 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:22,950 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:22,951 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:22,952 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:22,952 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:23,057 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:25,058 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:25,492 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:06:27,895 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:27,897 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:27,897 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:27,897 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:28,059 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:29,059 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:33,154 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:06:33,155 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:06:33,172 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:33,214 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:33,214 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:33,214 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:34,062 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:35,062 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:38,257 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:38,258 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:38,258 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:38,259 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:39,064 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:39,064 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:43,313 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:43,314 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:43,314 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:43,315 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:44,066 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:45,067 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:48,217 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:06:48,217 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:06:48,455 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:48,456 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:48,456 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:48,457 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:49,068 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:49,069 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:53,525 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:53,526 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:53,526 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:53,527 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:54,071 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:06:56,071 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:06:56,520 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:06:58,568 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:06:58,569 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:06:58,569 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:06:58,570 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:06:59,073 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:00,073 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:03,283 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:07:03,284 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:07:03,529 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:04,052 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:04,053 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:04,053 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:04,075 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:06,076 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:08,721 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:08,722 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:08,722 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:08,723 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:09,077 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:10,078 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:13,645 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:13,646 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:13,646 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:13,647 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:14,080 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:16,081 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:18,721 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:18,722 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:18,723 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:18,723 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:19,082 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:19,098 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:07:19,098 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:07:20,082 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:23,884 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:23,886 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:23,886 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:23,887 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:24,084 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:26,085 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:27,637 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:07:28,892 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:28,893 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:28,893 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:28,894 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:29,086 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:30,087 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:33,843 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:33,844 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:33,844 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:33,845 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:34,089 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:34,369 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:07:34,369 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:07:36,090 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:38,895 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:38,896 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:38,897 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:38,897 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:39,091 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:40,091 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:44,104 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:44,105 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:44,105 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:44,106 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:45,094 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:46,094 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:49,036 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:49,037 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:49,038 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:49,038 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:49,095 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:49,513 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:07:49,514 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:07:50,096 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:54,098 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:54,099 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:54,100 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:54,100 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:07:55,098 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:07:56,099 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:07:58,686 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:07:59,290 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:07:59,291 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:07:59,292 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:07:59,292 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:00,100 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:00,100 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:04,361 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:04,363 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:08:04,363 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:04,363 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:04,631 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:08:04,631 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:08:05,103 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:07,104 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:09,393 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:09,395 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:08:09,395 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:09,396 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:10,105 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:11,106 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:14,439 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:14,440 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:08:14,441 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:14,441 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:15,108 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:17,109 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:19,516 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:19,518 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:08:19,518 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:19,519 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:19,691 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-08 04:08:19,691 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: stop_status
+2022-08-08 04:08:20,110 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:21,110 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:24,840 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:24,842 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:08:24,843 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:24,843 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:25,112 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:27,113 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:29,836 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:08:29,936 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:29,937 DEBUG   SenderThread:126803 [sender.py:send():235] send: history
+2022-08-08 04:08:29,938 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:29,938 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:30,114 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:30,372 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-08 04:08:30,372 DEBUG   SenderThread:126803 [sender.py:send():235] send: telemetry
+2022-08-08 04:08:32,115 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:32,899 DEBUG   SenderThread:126803 [sender.py:send():235] send: exit
+2022-08-08 04:08:32,899 INFO    SenderThread:126803 [sender.py:send_exit():371] handling exit code: 0
+2022-08-08 04:08:32,899 INFO    SenderThread:126803 [sender.py:send_exit():373] handling runtime: 280
+2022-08-08 04:08:32,899 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:32,900 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:32,900 INFO    SenderThread:126803 [sender.py:send_exit():379] send defer
+2022-08-08 04:08:32,900 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:32,900 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:32,900 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-08 04:08:32,901 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:32,901 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-08-08 04:08:32,901 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 1
+2022-08-08 04:08:32,901 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:32,901 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-08 04:08:33,041 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:33,041 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:33,041 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-08-08 04:08:33,041 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 2
+2022-08-08 04:08:33,041 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:33,042 DEBUG   SenderThread:126803 [sender.py:send():235] send: stats
+2022-08-08 04:08:33,043 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:33,043 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-08 04:08:33,043 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:33,043 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-08-08 04:08:33,043 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 3
+2022-08-08 04:08:33,043 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:33,043 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-08 04:08:33,044 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:33,044 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-08-08 04:08:33,044 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 4
+2022-08-08 04:08:33,044 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:33,044 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-08 04:08:33,044 DEBUG   SenderThread:126803 [sender.py:send():235] send: summary
+2022-08-08 04:08:33,045 INFO    SenderThread:126803 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-08-08 04:08:33,045 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:33,045 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-08-08 04:08:33,045 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 5
+2022-08-08 04:08:33,045 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:33,045 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-08 04:08:33,045 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:33,045 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-08-08 04:08:33,115 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:33,115 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:33,119 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 6
+2022-08-08 04:08:33,120 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:33,120 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-08 04:08:33,120 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:33,120 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-08-08 04:08:33,120 INFO    SenderThread:126803 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-08-08 04:08:33,143 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,115 INFO    Thread-7  :126803 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/config.yaml
+2022-08-08 04:08:34,116 INFO    SenderThread:126803 [dir_watcher.py:finish():313] scan: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files
+2022-08-08 04:08:34,116 INFO    SenderThread:126803 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-metadata.json wandb-metadata.json
+2022-08-08 04:08:34,116 INFO    SenderThread:126803 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/config.yaml config.yaml
+2022-08-08 04:08:34,116 INFO    SenderThread:126803 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json wandb-summary.json
+2022-08-08 04:08:34,120 INFO    SenderThread:126803 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log output.log
+2022-08-08 04:08:34,120 INFO    SenderThread:126803 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/requirements.txt requirements.txt
+2022-08-08 04:08:34,121 INFO    SenderThread:126803 [dir_watcher.py:finish():327] scan save: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/conda-environment.yaml conda-environment.yaml
+2022-08-08 04:08:34,125 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 7
+2022-08-08 04:08:34,125 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,129 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:34,130 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-08 04:08:34,130 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:34,134 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-08-08 04:08:34,134 INFO    SenderThread:126803 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-08 04:08:34,231 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,231 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,332 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,332 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,433 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,433 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,459 INFO    Thread-12 :126803 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/config.yaml
+2022-08-08 04:08:34,470 INFO    Thread-13 :126803 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/wandb-summary.json
+2022-08-08 04:08:34,489 INFO    Thread-15 :126803 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/requirements.txt
+2022-08-08 04:08:34,505 INFO    Thread-14 :126803 [upload_job.py:push():137] Uploaded file /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/files/output.log
+2022-08-08 04:08:34,534 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,534 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,635 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,635 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,705 INFO    Thread-6  :126803 [sender.py:transition_state():392] send defer: 8
+2022-08-08 04:08:34,706 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:34,706 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-08 04:08:34,706 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:34,706 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-08-08 04:08:34,736 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:34,904 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 9
+2022-08-08 04:08:34,904 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:34,905 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:34,905 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-08 04:08:34,905 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:34,905 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-08-08 04:08:34,905 INFO    SenderThread:126803 [sender.py:transition_state():392] send defer: 10
+2022-08-08 04:08:34,906 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: defer
+2022-08-08 04:08:34,906 INFO    HandlerThread:126803 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-08 04:08:34,906 DEBUG   SenderThread:126803 [sender.py:send():235] send: final
+2022-08-08 04:08:34,906 DEBUG   SenderThread:126803 [sender.py:send():235] send: footer
+2022-08-08 04:08:34,906 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: defer
+2022-08-08 04:08:34,906 INFO    SenderThread:126803 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-08-08 04:08:35,005 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-08 04:08:35,005 DEBUG   SenderThread:126803 [sender.py:send_request():249] send_request: poll_exit
+2022-08-08 04:08:35,006 INFO    SenderThread:126803 [file_pusher.py:join():150] waiting for file pusher
+2022-08-08 04:08:35,208 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-08 04:08:35,210 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-08 04:08:35,210 DEBUG   HandlerThread:126803 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-08 04:08:35,210 INFO    HandlerThread:126803 [handler.py:finish():778] shutting down handler
+2022-08-08 04:08:35,906 INFO    WriterThread:126803 [datastore.py:close():281] close: /home/ubuntu/QA_code/QA_application/training/Non_Distributed/scripts/wandb/run-20220808_040350-hrgh845j/run-hrgh845j.wandb
+2022-08-08 04:08:36,107 INFO    SenderThread:126803 [sender.py:finish():1078] shutting down sender
+2022-08-08 04:08:36,108 INFO    SenderThread:126803 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-08 04:08:36,108 INFO    SenderThread:126803 [file_pusher.py:join():150] waiting for file pusher
+2022-08-08 04:08:36,188 INFO    MainThread:126803 [internal.py:handle_exit():82] Internal process exited

@@ -1,0 +1,39 @@
+Epoch: 1 	Training Loss: 0.982444 	Validation Loss: 0.983427 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (inf --> 0.983427).  Saving model ...
+Epoch: 2 	Training Loss: 0.983427 	Validation Loss: 0.769555 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.983427 --> 0.769555).  Saving model ...
+Epoch: 3 	Training Loss: 0.769555 	Validation Loss: 0.618653 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.769555 --> 0.618653).  Saving model ...
+Epoch: 4 	Training Loss: 0.623287 	Validation Loss: 0.625812 	 Validation Accuracy: 0.000000 	
+Epoch: 5 	Training Loss: 0.579718 	Validation Loss: 0.635188 	 Validation Accuracy: 0.000000 	
+Epoch: 6 	Training Loss: 0.635188 	Validation Loss: 0.533499 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.618653 --> 0.533499).  Saving model ...
+Epoch: 7 	Training Loss: 0.522099 	Validation Loss: 0.555089 	 Validation Accuracy: 0.000000 	
+Epoch: 8 	Training Loss: 0.514700 	Validation Loss: 0.540086 	 Validation Accuracy: 0.000000 	
+Epoch: 9 	Training Loss: 0.540086 	Validation Loss: 0.467916 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.533499 --> 0.467916).  Saving model ...
+Epoch: 10 	Training Loss: 0.493618 	Validation Loss: 0.489004 	 Validation Accuracy: 0.000000 	
+Epoch: 11 	Training Loss: 0.483848 	Validation Loss: 0.426869 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.467916 --> 0.426869).  Saving model ...
+Epoch: 12 	Training Loss: 0.433637 	Validation Loss: 0.437559 	 Validation Accuracy: 0.000000 	
+Epoch: 13 	Training Loss: 0.437559 	Validation Loss: 0.423510 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.426869 --> 0.423510).  Saving model ...
+Epoch: 14 	Training Loss: 0.430828 	Validation Loss: 0.403980 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.423510 --> 0.403980).  Saving model ...
+Epoch: 15 	Training Loss: 0.405773 	Validation Loss: 0.401980 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.403980 --> 0.401980).  Saving model ...
+Epoch: 16 	Training Loss: 0.400875 	Validation Loss: 0.375140 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.401980 --> 0.375140).  Saving model ...
+Epoch: 17 	Training Loss: 0.372483 	Validation Loss: 0.376394 	 Validation Accuracy: 0.000000 	
+Epoch: 18 	Training Loss: 0.381298 	Validation Loss: 0.361865 	 Validation Accuracy: 0.000000 	
+Validation loss decreased (0.375140 --> 0.361865).  Saving model ...
+Traceback (most recent call last):
+  File "train_binary.py", line 161, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=50, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+  File "train_binary.py", line 121, in train_model
+    loss.backward()
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "train_binary.py", line 55, in <module>
+    'test': test_loader
+NameError: name 'test_loader' is not defined

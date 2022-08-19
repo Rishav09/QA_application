@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "train_binary.py", line 161, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=5, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+  File "train_binary.py", line 136, in train_model
+    loss = criterion(pred.float(), target.float())   # changes
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/loss.py", line 704, in forward
+    return F.binary_cross_entropy_with_logits(input, target,
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/functional.py", line 2980, in binary_cross_entropy_with_logits
+    raise ValueError("Target size ({}) must be the same as input size ({})".format(target.size(), input.size()))
+ValueError: Target size (torch.Size([8])) must be the same as input size (torch.Size([8, 1]))

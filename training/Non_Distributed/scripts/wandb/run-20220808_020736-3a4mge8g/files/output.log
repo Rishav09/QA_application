@@ -1,0 +1,23 @@
+Epoch: 1 	Training Loss: 0.112604 	Validation Loss: 1.344226 	 Validation Accuracy: 50.000000 	
+Validation loss decreased (inf --> 1.344226).  Saving model ...
+Epoch: 2 	Training Loss: 0.105411 	Validation Loss: 1.533846 	 Validation Accuracy: 50.000000 	
+Epoch: 3 	Training Loss: 0.103081 	Validation Loss: 1.251075 	 Validation Accuracy: 50.126122 	
+Validation loss decreased (1.344226 --> 1.251075).  Saving model ...
+Traceback (most recent call last):
+  File "train_binary.py", line 158, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=5, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+  File "train_binary.py", line 117, in train_model
+    output = model(data)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    replicas = self.replicate(self.module, self.device_ids[:len(inputs)])
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 172, in replicate
+    return replicate(module, device_ids, not torch.is_grad_enabled())
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/parallel/replicate.py", line 115, in replicate
+    replica = module._replicate_for_data_parallel()
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1851, in _replicate_for_data_parallel
+    replica._is_replica = True
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1204, in __setattr__
+    if isinstance(value, Module):
+KeyboardInterrupt

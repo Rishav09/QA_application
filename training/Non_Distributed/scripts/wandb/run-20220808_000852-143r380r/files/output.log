@@ -1,0 +1,13 @@
+Epoch: 1 	Training Loss: 0.113390 	Validation Loss: 1.383759 	 Validation Accuracy: 50.000000 	
+Validation loss decreased (inf --> 1.383759).  Saving model ...
+Epoch: 2 	Training Loss: 0.106363 	Validation Loss: 1.537272 	 Validation Accuracy: 50.022257 	
+Traceback (most recent call last):
+  File "train_binary.py", line 158, in <module>
+    train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=30, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+  File "train_binary.py", line 119, in train_model
+    loss.backward()
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/ubuntu/anaconda3/envs/pytorch_p38/lib/python3.8/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt
