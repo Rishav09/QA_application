@@ -19,8 +19,8 @@ def resize_image(image_path,output_folder,resize):
         rgb_img.save(outpath)
 
 
-path_dir = '/home/ubuntu/EyePacs_Lenke_Dataset_Division/Test'
-output_folder = '/home/ubuntu/EyePacs_Lenke_Dataset_Division_64/test'
+path_dir = '/home/ubuntu/Left_AI_Bias'
+output_folder = '/home/ubuntu/Left_AI_Bias_448/'
 images = glob.glob(os.path.join(path_dir, '*.JPG'))
 
 
@@ -28,6 +28,6 @@ Parallel(n_jobs=120)(
      delayed(resize_image)(
          i,
          output_folder,
-         (64, 64)
+         (448, 448)
      )for i in tqdm(images)
  )
