@@ -8,6 +8,7 @@ import wandb
 import numpy as np
 import os
 import random
+from sklearn.metrics import confusion_matrix
 from import_packages.dataset_partition import split_equal_into_val, split_equal_into_test # noqa
 from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
@@ -105,6 +106,17 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
         correct = 0.0
         total = 0.0
         accuracy = 0.0
+        train_accuracy = 0.0
+        train_correct = 0.0
+        train_total = 0.0
+        senstivity = 0.0
+        precision = 0.0
+        specificity = 0.0
+        true_positives = 0
+        false_positives = 0
+        true_negatives = 0
+        false_negatives = 0
+        class_names = ['Good', 'Bad']
         ###################
         # train the model #
         ###################
@@ -116,11 +128,14 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             optimizer.zero_grad()
             output = model(data)
             pred = torch.max(output, dim=1, keepdim=True)[0]
+            preds = torch.max(output, dim=1, keepdim=True)[1]
             target = torch.unsqueeze(target, dim=1)
             loss = criterion(pred.float(), target.float())
             loss.backward()
             optimizer.step()
             train_loss += ((1 / (batch_idx + 1)) * ((loss.data) - train_loss))
+            train_correct += np.sum(np.squeeze(preds.eq(target.data.view_as(preds)).cpu().numpy())) # noqa
+            train_total += data.size(0)
         ######################
         # validate the model #
         ######################
@@ -135,18 +150,41 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             pred = torch.max(output, dim=1, keepdim=True)[0]
             preds = torch.max(output, dim=1, keepdim=True)[1]
             target = torch.unsqueeze(target, dim=1)
+            confusion_vector = preds/target.data.view_as(preds)
             loss = criterion(pred.float(), target.float())   # changes
             valid_loss += ((1 / (batch_idx + 1)) * ((loss.data) - valid_loss))
-            correct += np.sum(np.squeeze(preds.eq(target.data.view_as(pred)).cpu().numpy())) # noqa
+            correct += np.sum(np.squeeze(preds.eq(target.data.view_as(preds)).cpu().numpy())) # noqa
             total += data.size(0)
+            true_positives += torch.sum(confusion_vector == 1).item()
+            false_positives += torch.sum(confusion_vector == float('inf')).item() # noqa
+            true_negatives += torch.sum(torch.isnan(confusion_vector)).item()
+            false_negatives += torch.sum(confusion_vector == 0).item()
+        # Metrics
         accuracy = 100. * (correct/total)
-        print('Epoch: {} \tTraining Loss: {:.6f} \tValidation Loss: {:.6f} \t Validation Accuracy: {:.6f} \t '.format( # noqa
+        train_accuracy = 100. * (train_correct/train_total)
+        senstivity = 0 if (true_positives+false_negatives) == 0 else (true_negatives / (true_positives+false_negatives))  # noqa
+        precision = 0 if (true_positives+false_negatives) == 0 else (true_positives / (true_positives+false_negatives))   # noqa
+        specificity = 0 if (true_negatives+false_positives) == 0 else (true_negatives / (true_negatives+false_positives)) # noqa
+        f1_score =  0 if (precision+senstivity)==0 else ((2*precision*senstivity) / (precision + senstivity)) # noqa
+        beta = 2.0 # Only for QA task as Recall is more important
+        f1_score_beta = 0 if (precision+senstivity)==0 else ((1+beta ** 2) * precision * senstivity) / (beta**2 * (precision + senstivity)) # noqa
+
+        print('Epoch: {} \tTraining Loss: {:.6f} \tValidation Loss: {:.6f} \t Validation Accuracy: {:.6f} \t f1_score: {:.6f}  \t f1_score_beta: {:.6f}  \t Senstivity: {:.6f} \t Precision: {:.6f} \t Specificity: {:.6f} \t True Positive: {} \t false Positive: {} \t true negative: {} \t false negative: {}'.format( # noqa
             epoch,
             train_loss,
             valid_loss,
             accuracy,
+            senstivity,
+            precision,
+            specificity,
+            f1_score,
+            f1_score_beta,
+            true_positives,
+            false_positives,
+            true_negatives,
+            false_negatives
             ))
-        wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy}) # noqa
+        wandb.log({'Epoch': epoch, 'loss': train_loss,'valid_loss': valid_loss, 'Valid_Accuracy': accuracy, 'train_Accuracy': train_accuracy}) # noqa
         # TODO: save the model if validation loss has decreased
         if valid_loss <= valid_loss_min:
             print('Validation loss decreased ({:.6f} --> {:.6f}).  Saving model ...'.format( # noqa
@@ -160,4 +198,4 @@ def train_model(model, loader, criterion, optimizer,  n_epochs, checkpoint_path)
             valid_loss_min = valid_loss
     return model
 
-train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=50, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
+train_model(model=model_transfer, loader=data_transfer, optimizer=optimizer, criterion=criterion_transfer,  n_epochs=2, checkpoint_path='/home/ubuntu/Saved_Models/binary_checkpoint_64.pt') # noqa
