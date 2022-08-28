@@ -14,10 +14,6 @@ from import_packages.dataset_class import Dataset
 from import_packages.train_val_to_ids import train_val_to_ids
 from import_packages.checkpoint import save_checkpoint
 
-# sys.path.insert(1, '/Users/swastik/ophthalmology/Project_Quality_Assurance/Final_QA_FDA/Application/training/Non_Distributed') # noqa
-
- # noqa
-
 
 # %%
 # Deterministic Behavior
@@ -39,7 +35,7 @@ os.environ['WANDB_MODE'] = "online"
 wandb.init(project="binary_qa")
 config = wandb.config
 # %%
-config.batch_size = 1
+config.batch_size = 256
 temp_train,temp_valid= split_equal_into_val(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_train_val_20220727-181159.csv', stratify_colname='labels',no_of_classes=2) # noqa
 temp_test = split_equal_into_test(csv_file='/home/ubuntu/QA_code/QA_application/Processed_Input_files/Split_folders/2_cases_test_20220727-181159.csv', stratify_colname='labels') # noqa
 partition, labels=train_val_to_ids(temp_train, temp_valid, temp_test, stratify_columns='labels') # noqa
